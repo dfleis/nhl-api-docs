@@ -1,0 +1,3160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 3.0.16 2024-10-06 15:21:13"/>
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:hint="This is simplified WADL with user and core resources only. To get full WADL with extended resources use the query parameter detail. Link: https://records.nhl.com/site/api/application.wadl?detail=true"/>
+    <grammars/>
+    <resources base="https://records.nhl.com/site/api/">
+        <resource path="all-star-goaltender-career-stats">
+            <method id="getAllStarGoaltenderCareerStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-road-point-streak-vs-franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="league-playoff-year-totals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-multi-assist-games-season">
+            <method id="getSkaterMultiAssistGamesSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="scf-situational-records">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-2-goals-from-period-start-one-skater">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-consecutive-series-won">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-faceoffs">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="draft-lottery-odds">
+            <method id="getDraftLotteryOdds" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-shutout-streak">
+            <method id="getGoalieShutoutStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-blocked-shots">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-rookie-game-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-shutout-games-streak-playoffs">
+            <method id="GoalieShutoutGamesStreakPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="draft">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="roundNumbers">
+                <method id="getRoundNumbers" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="draftYear" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="teams">
+                <method id="getDraftingTeams" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="startYear" style="query" type="xs:int"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="endYear" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="countries">
+                <method id="getCountryCodes" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="draftYear" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getDraft" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="byTeam/{teamId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="teamId" style="template" type="xs:int"/>
+                <method id="getDraftedPlayersByTeamId" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="amateurTeams">
+                <method id="getAmateurTeams" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="draftYear" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-playoff-win-streak-one-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-3-goals-from-period-start-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-winless-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-6-goals-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-playoff-streak">
+            <method id="getGeneralManagerCareerRecordsRegularPlusPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-undefeated-streak-incl-playoffs">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-home-point-streak">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-loss-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-game-consecutive-goals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-two-goals-one-skater">
+            <method id="getInternationalFastestTwoGoalsOneSkater" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="player-game-stats">
+            <method id="getPlayerByGameStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-game">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-win-streak-multiple-seasons">
+            <method id="getGoaliePlayoffWinStreakMultipleSeasons" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-clinching-game">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-win-streak-multiple-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-two-goals-both-teams">
+            <method id="getInternationalFastestTwoGoalsBothTeams" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-outdoor-totals-period-both-teams">
+            <method id="getTeamOutdoorTotalsPeriodBothTeams" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-2-goals-from-period-start-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-elimination-game">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-clinching-game-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-loss-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-time-on-ice">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-5-goals-one-team">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-goaltender-period-record">
+            <method id="getInternationalGoaltenderPeriod" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-clinching-game">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-outdoor-totals-period">
+            <method id="getGoalieOutdoorTotalsPeriod" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-goaltender-game-stats">
+            <method id="getAllStarGoaltenderGameStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="non-shutout-streak-incl-playoffs">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-stanley-cup-final-appearance-streak">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-elimination-game-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="comeback-franchise-wins">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-winless-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-loss-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="comeback-franchise-three-goal-games">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-multi-assist-games-career">
+            <method id="getSkaterMultiAssistGamesCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="draft-master">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-december">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="scoring-plateaus">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-latest-goals">
+            <method id="getSkaterLatestGoals" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-playoff-streak">
+            <method id="getCoachPlayoffStreak" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-missed-shots">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-win-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-4-goals-one-team">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-point-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="milestone-100-point-season">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getMilestone100PointSeasons" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="all-star-skater-period-stats">
+            <method id="getAllStarSkaterPeriodStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="draft-prospect">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getDraftProspect" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-playoff-ot-period-scoring-both-teams">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-undefeated-streak-incl-playoffs">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-150-playoff-wins">
+            <method id="getCoachFewestGamesTo150PlayoffWins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="yearly-playoff-series-details">
+            <method id="getGRBPlayoffSeriesDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-100-playoff-games">
+            <method id="getCoachMostWins100PlayoffGames" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/logo">
+            <method id="getLogos" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-playoff-series-totals">
+            <method id="getCoachPlayoffSeriesTotals" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-clinching-game-series">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-assist-streak-start-of-season">
+            <method id="getSkaterAssistStreakStartOfSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-winless-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="games-played-active-streak-skaters">
+            <method id="getGamesPlayedActiveStreakSkaters" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-affiliate">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-october">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/record-category">
+            <method id="getRecordDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-skater-goals">
+            <method id="getInternationalFastestSkaterGoal" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-streak">
+            <method id="getSkaterPlayoffStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-stanley-cup-final-streak">
+            <method id="getCoachStanleyCupFinalStreak" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-100-games">
+            <method id="getCoachMostWins100Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-winless-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-latest-game-tying-goal">
+            <method id="getSkaterLatestGameTyingGoal" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-undefeated-streak-incl-playoffs">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-regular-plus-playoff-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-elimination-game-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="venue">
+            <method id="getVenue" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-home-win-streak-vs-franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-non-shutout-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="component-season">
+            <method id="getComponentSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-streak-multiple-seasons">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-100-point-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-road-win-streak">
+            <method id="getGoalieRoadWinStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-elimination-game">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-game-seven-streak">
+            <method id="getCoachGameSevenStreak" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-first-series-win">
+            <method id="getCoachFirstSeriesWin" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-100-wins">
+            <method id="getCoachFewestGamesTo100Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-playoff-series-details">
+            <method id="getInternationalSeriesGameDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-both-teams-period-record">
+            <method id="getInternationalBothTeamsPeriodRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-stats">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-first-stanley-cup-win">
+            <method id="getCoachFirstStanleyCupWin" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-skater-penalty-shots">
+            <method id="getInternationalSkaterPenaltyShot" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="player-stanley-cup-wins">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="games-played-streak-goalies">
+            <method id="getGamesPlayedStreakGoalies" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-team-series-stats-both-teams">
+            <method id="getPlayerByGameStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-ot-shot-totals-one-team">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="series-situational-records">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-totals">
+            <method id="getFranchiseTotals" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-clinching-game-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-600-wins">
+            <method id="getCoachFewestGamesTo600Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie_season_stats_incl_playoffs">
+            <method id="getGoalieSeasonStatsInclPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-game-record-and-scoring">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-clinching-game">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/{franchiseTricode}/record-detail">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="franchiseTricode" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="phwa-all-star-team">
+            <method id="getOfficials" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-first-game-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-outdoor-totals-career">
+            <method id="getGoalieOutdoorTotalsCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-team-series-stats">
+            <method id="getPlayerByGameStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-point-streak">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-clinching-game-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="scf-team-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-playoff-streak">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-career-records-regular-plus-playoffs">
+            <method id="getCoachCareerRecordsRegularPlusPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-3-goals-from-period-start-one-team">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/meta-data/{path:.*}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="path" style="template" type="xs:string"/>
+            <method id="getMetaData" name="GET">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="query" type="xs:string"/>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-three-goals-one-skater">
+            <method id="getInternationalFastestThreeGoalsOneSkater" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-road-point-streak">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-penalty-minutes">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-clinching-game-series">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-win-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-stats">
+            <method id="getGoalieStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-all-time-shootout-records">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-team-period-record">
+            <method id="getInternationalTeamPeriodRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/{franchiseTricode}/content/module">
+            <resource path="{templateKey}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="franchiseTricode" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="templateKey" style="template" type="xs:string"/>
+                <method id="get" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="cayenneExp" style="query" type="xs:string"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="international-team-game-record">
+            <method id="getInternationalTeamGameRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-season">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-900-wins">
+            <method id="getCoachFewestGamesTo900Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-career-scoring-regular-season">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-series-shutout-sequence">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-shutout-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-elimination-game-series">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-series-shutout-streak">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-500-wins">
+            <method id="getCoachFewestGamesTo500Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-franchise-totals">
+            <method id="getGRBSkaterCareerTotals" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-career">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach">
+            <method id="getCoaches" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getCoach" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-season-winless-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="ping">
+            <method id="ping" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-career">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-november">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="shootout-goalie-career">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-700-games">
+            <method id="getCoachMostWins700Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-franchise-records">
+            <method id="getGeneralManagerFranchiseRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-elimination-game-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-winless-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="season/event">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="games">
+                <method id="getSpecialEventGames" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="preseason-games-outside-north-america">
+                <method id="getPreSeasonGamesOutsideNorthAmerica" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="offseason-games-outside-north-america">
+                <method id="getOffseasonGamesOutsideNorthAmerica" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-record-by-month">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="milestone-50-goal-season">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getMilestone50GoalSeasons" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-playoff-ot-period-scoring-one-team">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-elimination-game-series">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="draft-lottery-odds-all-time">
+            <method id="getDraftLotteryOddsAllTime" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie_career_stats_incl_playoffs">
+            <method id="getGoalieCareerStatsInclPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-home-point-streak-vs-franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-captains">
+            <method id="getPlayoffCaptain" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-season-stats">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-40-win-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-career-totals-by-franchise">
+            <method id="getGoalieCareerTotalsByFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-win-streak-incl-playoffs">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-skater-career-record">
+            <method id="getInternationalSkaterCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-100-playoff-wins">
+            <method id="getCoachFewestGamesTo100PlayoffWins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-period-penalties">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="scf-franchise-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-shootout-records">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-record-and-scoring">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-point-streak">
+            <method id="getSkaterPointStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-800-games">
+            <method id="getCoachMostWins800Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-clinching-game-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-win-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-5-goals-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-career-scoring">
+            <method id="getGoalieCareerScoring" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-streak">
+            <method id="getGoaliePlayoffStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-period-penalties">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="combine">
+            <method id="getCombineBenchPress" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-win-plateaus">
+            <method id="getGoalieWinPlateaus" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="milestone-1000-point-career">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getMilestone1000PointCareer" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-outdoor-fastest-2-goals-from-period-start-one-team">
+            <method id="getTeamOutdoorFastest2GoalsFromPeriodStartOneTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-period">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-point-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-win-streak-incl-playoffs">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-outdoor-fastest-2-goals-one-team">
+            <method id="getTeamOutdoorFastest2GoalsOneTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-scf-series-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-youngest-3-point-games">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="special-event">
+            <method id="getTrophy" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-giveaways">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-2-goals-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-career-stats">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-road-win-streak-vs-franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-youngest-goal-scorers">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-elimination-game-series">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-detail">
+            <method id="getTeamDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-outdoor-totals-game-both-teams">
+            <method id="getTeamOutdoorTotalsGameBothTeams" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-franchise-season-records">
+            <method id="getGeneralManagerFranchiseSeasonRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-career-scoring-regular-plus-playoffs">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-200-playoff-games">
+            <method id="getCoachMostWins200PlayoffGames" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-team-tournament-record">
+            <method id="getInternationalTeamTournamentRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="scf-appearances-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-coach-career-stats">
+            <method id="getAllStarCoachCareerStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-200-games">
+            <method id="getCoachMostWins200Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-scf-streak">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-scf-game-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-season-results">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-skater-series-stats">
+            <method id="getGRBPlayoffSkaterSeriesStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-shots">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-game-stats">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-clinching-game-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-undefeated-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-streak">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-round-robin-game">
+            <method id="getPlayoffRoundRobinGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="penalty-shots">
+            <method id="getPenaltyShots" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-40-goal-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-stanley-cup-streak">
+            <method id="getCoachStanleyCupStreak" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-2-goals-from-period-start-one-team">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-period-shots">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-season-opener-standings">
+            <method id="getFranchiseSeasonOpenerRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-150-playoff-games">
+            <method id="getCoachMostWins150PlayoffGames" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-latest-go-ahead-goal">
+            <method id="getSkaterLatestGoAheadGoal" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-game-seven-franchise">
+            <method id="getCoachGameSevenFranchise" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-goaltender-tournament-record">
+            <method id="getInternationalGoaltenderTournament" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-hits">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-elimination-game">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/record-meta-details/{path:.*}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="path" style="template" type="xs:string"/>
+            <method id="getRecordMetaDetails" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-career-records">
+            <method id="getCoachCareerRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getCoachCareerRecords" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-outdoor-totals-game-one-team">
+            <method id="getTeamOutdoorTotalsGameOneTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-january">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-50-playoff-wins">
+            <method id="getCoachFewestGamesTo50PlayoffWins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-two-goals-one-team">
+            <method id="getInternationalFastestTwoGoalsOneTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-undefeated-streak-first-season">
+            <method id="getGoalieUndefeatedStreakFirstSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-point-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-point-streak-vs-franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="expansion-draft-rules">
+            <method id="getExpansionDraft" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="hof/office">
+            <method id="getHallOfFameOffice" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="/{officeId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="officeId" style="template" type="xs:int"/>
+                <method id="getOfficeInformation" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="coach-most-wins-300-games">
+            <method id="getCoachMostWins300Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-win-streak">
+            <method id="getGoalieWinStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-point-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-outdoor-totals-game">
+            <method id="getSkaterOutdoorTotalsGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-1000-games">
+            <method id="getCoachMostWins1000Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-career-records">
+            <method id="getGeneralManagerCareerRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-penalties">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="expansion-draft-picks">
+            <method id="getExpansionDraftPick" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="trophy">
+            <method id="getTrophy" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="trophy-categories/{franchiseId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="franchiseId" style="template" type="xs:int"/>
+                <method id="getFranchiseTrophyCategories" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="franchise-trophy-categories">
+                <method id="getFranchiseTrophyCategories" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="trophy-categories">
+                <method id="getTrophyCategories" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="skater-multi-goal-games-season">
+            <method id="getSkaterMultiGoalGamesSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-outdoor-totals-game">
+            <method id="getGoalieOutdoorTotalsGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-800-wins">
+            <method id="getCoachFewestGamesTo800Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/{franchiseTricode}/menu">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="franchiseTricode" style="template" type="xs:string"/>
+            <method id="getSiteMenu" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="media-three-star">
+            <method id="getTeamDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-skater-career-stats">
+            <method id="getAllStarSkaterCareerStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-30-goal-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-400-wins">
+            <method id="getCoachFewestGamesTo400Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="award-details">
+            <method id="getAwardDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="trophy/{trophyId}/season/{seasonId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="seasonId" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="trophyId" style="template" type="xs:int"/>
+                <method id="getTrophyImage" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{franchiseId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="franchiseId" style="template" type="xs:int"/>
+                <method id="getFranchiseAwards" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="trophyCategoryId" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="fastest-3-assists">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-power-play-goals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-point-streak-start-of-career">
+            <method id="getSkaterPointStreakStartOfCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-game-scoring">
+            <method id="getGoalieGameScoring" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-stanley-cup-consecutive-streak">
+            <method id="getCoachStanleyCupStreak" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-multi-goal-games-career">
+            <method id="getSkaterMultiGoalGamesCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-elimination-game-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="record-video-detail">
+            <method id="getRecordVideoDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-team-all-time-record">
+            <method id="getInternationalTeamAllTimeRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-career-scoring-by-position">
+            <method id="getSkaterCareerScoringByPosition" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="comeback-league-wins">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="shootout-skaters-career">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-win-streak-vs-franchise">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-undefeated-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-undefeated-streak">
+            <method id="getGoalieUndefeatedStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-career-scoring-playoffs">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-most-goals-1st-50-games">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-undefeated-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-outdoor-fastest-goal-from-period-start">
+            <method id="getSkaterOutdoorFastestGoalFromPeriodStart" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="player-stats">
+            <method id="getPlayerStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-ot-shot-totals-both-teams">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-first-season-game-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-youngest-winners">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-home-win-streak">
+            <method id="getGoalieHomeWinStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-skater-game-stats">
+            <method id="getAllStarSkaterGameStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-period-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="neutral-site-standings">
+            <method id="getNeutralSiteGameStandings" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-50-playoff-games">
+            <method id="getCoachMostWins50PlayoffGames" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-three-goals-one-team">
+            <method id="getInternationalFastestThreeGoalsOneTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-goal-streak">
+            <method id="getSkaterGoalStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-900-games">
+            <method id="getCoachMostWins900Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-tournament-winner">
+            <method id="getInternationalTournamentWinner" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-game-overtime-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="games-played-streak-skaters">
+            <method id="getGamesPlayedStreakSkaters" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-youngest-4-point-games">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-shutout-games-streak-regular-season">
+            <method id="GoalieShutoutGamesStreakRegularSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-series">
+            <method id="getPlayoffSeriesDetail" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="/byFinal">
+                <method id="getFinal" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/bySeries/{seriesLetter}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="seriesLetter" style="template" type="xs:string"/>
+                <method id="getSeries" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/bySeason/{seasonId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="seasonId" style="template" type="xs:int"/>
+                <method id="getStanleyCupFinal" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="international-both-teams-game-record">
+            <method id="getInternationalBothTeamsGameRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-undefeated-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-stanley-cup-final-win-streak">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-career-records-regular-plus-playoffs">
+            <method id="getGeneralManagerCareerRecordsRegularPlusPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-skater-tournament-record">
+            <method id="getInternationalSkaterTournament" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-team-period-stats">
+            <method id="getAllStarTeamPeriodStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-loss-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-stanley-cup-final-streak">
+            <method id="getGeneralManagerCareerRecordsRegularPlusPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-30-win-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="milestone-500-goal-career">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getMilestone50GoalSeasons" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-season-home-loss-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-period-scoring-both-teams">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-600-games">
+            <method id="getCoachMostWins600Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="three-or-more-goal-games-career">
+            <method id="getGRBSkaterSeasonTotals" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-franchise-records">
+            <method id="getCoachFranchiseRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getCoachFranchiseRecords" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="skater-real-time-stats-game-takeaways">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-shorthanded-goals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-2-goals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-assist-streak">
+            <method id="getSkaterAssistStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-all-time-game-7-record">
+            <method id="getFranchiseAllTimeGame7Record" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-team-totals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-multi-point-games-career">
+            <method id="getSkaterMultiPointGamesCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-win-streak-incl-playoffs">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="hof/players">
+            <method id="getHallOfFame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="/{officeId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="officeId" style="template" type="xs:int"/>
+                <method id="getHallOfFame" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="games-shutout-streak">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="officials">
+            <method id="getOfficials" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="/{type}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="type" style="template" type="xs:string"/>
+                <method id="getOfficials" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="draft-lottery-picks">
+            <method id="getDraftLotteryPicks" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="content-module-by-season">
+            <resource path="/{templateKey}/{seasonId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="seasonId" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="templateKey" style="template" type="xs:string"/>
+                <method id="getContentModuleBySeason" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="coach-fewest-games-to-700-wins">
+            <method id="getCoachFewestGamesTo900Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-fastest-three-goals-both-teams">
+            <method id="getInternationalFastestThreeGoalsBothTeams" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-2-goals-one-team">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-loss-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-300-wins">
+            <method id="getCoachFewestGamesTo300Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-multi-point-games-season">
+            <method id="getSkaterMultiPointGamesSeason" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-goaltender-period-stats">
+            <method id="getAllStarGoaltenderPeriodStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-overtime-games">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-win-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="home-team-record">
+            <method id="getHomeTeamRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-clinching-game-series">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-regular-season-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-skater-game-record">
+            <method id="getInternationalSkaterGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-4-goals-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-60-goal-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-first-game">
+            <method id="getCoachFirstGame" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-playoff-clinching-game-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-points">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-latest-series-clinching-goal">
+            <method id="getSkaterLatestSeriesClinchingGoal" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-youngest-shutouts">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="consecutive-20-goal-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-win-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-playoff-elimination-game-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-3-goals-one-team">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-goals-start-of-period">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-goalie-series-stats">
+            <method id="getGRBPlayoffGoalieSeriesStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="shootout-goalie-season">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-goals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-franchise-game-by-game-records">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-point-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-april">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-3-goals-both-teams">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-by-game-stats">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-game-record-and-scoring-both-teams">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-period-scoring">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-outdoor-totals-career">
+            <method id="getTeamOutdoorTotalsCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-game-seven-career">
+            <method id="getCoachGameSevenCareer" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-season-scoring">
+            <method id="getGoalieSeasonScoring" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-outdoor-totals-period">
+            <method id="getSkaterOutdoorTotalsPeriod" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-400-games">
+            <method id="getCoachMostWins400Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-march">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="shootout-skaters-season">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-1000-wins">
+            <method id="getCoachFewestGamesTo1000Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-star-team-game-stats">
+            <method id="getAllStarTeamGameStats" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-outdoor-totals-career">
+            <method id="getSkaterOutdoorTotalsCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="milestone-tracker">
+            <method id="getGrbMilestoneTracker" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager-franchise-records-regular-plus-playoffs">
+            <method id="getGeneralManagerCareerRecordsRegularPlusPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="fastest-3-goals">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-goaltender-game-record">
+            <method id="getInternationalGoaltenderGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="milestone-5-goal-game">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getMilestone50GoalSeasons" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="consecutive-50-goal-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-record-february">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-real-time-stats-game-shifts">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-skater-period-record">
+            <method id="getInternationalSkaterPeriod" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-most-wins-500-games">
+            <method id="getCoachMostWins500Games" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-road-undefeated-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-shutout-sequence-multiple-seasons">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-skater-short-handed-goals">
+            <method id="getInternationalSkaterShortHandedGoal" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-all-time-overtime-record">
+            <method id="getFranchiseAllTimeOvertimeRecord" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-playoff-elimination-game-totals">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all_star_team_position_leaders">
+            <method id="getAllStarTeamPositionLeaders" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-multipoint-games-career-by-position">
+            <method id="getSkaterMultipointGamesCareerByPosition" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-first-win">
+            <method id="getCoachFirstWin" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-youngest-5-point-games">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="game-winning-goals-stanley-cup">
+            <method id="getGameWinningGoalsStanleyCup" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="international-goaltender-career-record">
+            <method id="getInternationalGoaltenderCareer" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-fewest-games-to-200-wins">
+            <method id="getCoachFewestGamesTo200Wins" name="GET">
+                <response>
+                    <representation mediaType="*/*"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-game-assists">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="goalie-scf-series">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="general-manager">
+            <method id="getGeneralManagers" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getGeneralManager" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="team-season-undefeated-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="playoff-franchise-vs-team">
+            <method id="getPlayoffFranchiseVsTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="player">
+            <method id="getPlayers" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getPlayer" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="byTeam/{teamId}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="teamId" style="template" type="xs:int"/>
+                <method id="getCurrentRosterPlayers" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="skater-point-streak-multiple-playoffs">
+            <method id="getSkaterPointStreak" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-home-point-streak-start-of-season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-franchise-records-regular-plus-playoffs">
+            <method id="getCoachFranchiseRecordsRegularPlusPlayoffs" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="franchise-playoff-appearances">
+            <method id="getFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="all-time-record-vs-franchise">
+            <method id="getAllTimeRecordVsFranchise" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="skater-scf-career-scoring">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-outdoor-totals-period-one-team">
+            <method id="getTeamOutdoorTotalsPeriodOneTeam" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="team-season-win-streak">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="away-team-record">
+            <method id="getAwayTeamRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="attendance">
+            <method id="getSeasonAttendance" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="coach-franchise-season-records">
+            <method id="getCoachFranchiseSeasonRecords" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:int"/>
+                <method id="getCoachFranchiseSeasonRecords" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>

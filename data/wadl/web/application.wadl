@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 3.0.17 2024-12-19 10:00:03"/>
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:hint="This is simplified WADL with user and core resources only. To get full WADL with extended resources use the query parameter detail. Link: https://api-web.nhle.com/application.wadl?detail=true"/>
+    <grammars>
+        <include href="application.wadl/xsd0.xsd">
+            <doc title="Generated" xml:lang="en"/>
+        </include>
+    </grammars>
+    <resources base="https://api-web.nhle.com/">
+        <resource path="/v1/edge/goalie-shot-location-detail">
+            <resource path="{playerId}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{playerId}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getGoalieShotLocationDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/player-spotlight">
+            <method id="getPlayers" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="v1/schedule">
+            <resource path="now">
+                <method id="getSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <method id="getSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/standings-season">
+            <method id="standingsSeasons" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/v1/schedule/playoff-series">
+            <resource path="{season: [0-9]{8}}/{seriesLetter: \w}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="seriesLetter" style="template" type="xs:string"/>
+                <method id="getPlayoffSeriesSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/edge/skater-shot-speed-detail">
+            <resource path="{playerId}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{playerId}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getGoalieShotLocationDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/score">
+            <resource path="now">
+                <method id="getDailyAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <method id="getDailyScores" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/location">
+            <method id="getLocation" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/v1/edge/goalie-shot-location-top-10">
+            <resource path="{category}/{sortBy}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="category" style="template" type="xs:string"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{category}/{sortBy}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="category" style="template" type="xs:string"/>
+                <method id="getGoalieShotLocationDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/season">
+            <method id="seasons" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="v1/skater-stats-leaders">
+            <resource path="current">
+                <method id="current" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="categories" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <method id="skaterStatsLeaders" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="categories" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/where-to-watch">
+            <method id="getStreams" name="GET">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="include" style="query" type="xs:string"/>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="v1/club-stats">
+            <resource path="{team: \w{3}}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getClubStatsNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{team: \w{3}}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getTeamRoster" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/prospects">
+            <resource path="{team: \w{3}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getTeamProspects" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/postal-lookup">
+            <resource path="{postalCode}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="postalCode" style="template" type="xs:string"/>
+                <method id="getPostalInfos" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/edge/skater-skating-speed-detail">
+            <resource path="{playerId}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{playerId}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getEdgeSkaterSpeedDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/club-schedule-season">
+            <resource path="{team: \w{3}}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getSeasonScheduleAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{team: \w{3}}/{season: [0-9]{8}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getSeasonSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/playoff-series">
+            <resource path="carousel/{season: [0-9]{8}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <method id="getCarousel" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/draft-tracker">
+            <resource path="picks/now">
+                <method id="getDraftTrackerAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/draft/picks">
+            <resource path="{year: [0-9]{4}}/{round: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="round" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="year" style="template" type="xs:int"/>
+                <method id="get" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="now">
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{year: [0-9]{4}}/all">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="year" style="template" type="xs:int"/>
+                <method id="getAll" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/scoreboard">
+            <resource path="{team: \w{3}}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getTeamScoreboard" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="now">
+                <method id="getScoreboard" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <method id="getScoreboardForDate" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/roster">
+            <resource path="{team: \w{3}}/current">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getRosterAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{team: \w{3}}/{season: [0-9]{8}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getTeamRoster" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/club-schedule">
+            <resource path="{team: \w{3}}/month/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getMonthScheduleAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{team: \w{3}}/month/{month: [0-9]{4}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="month" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getMonthSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{team: \w{3}}/week/{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getWeekSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{team: \w{3}}/week/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getWeekScheduleAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/ppt-replay">
+            <resource path="/goal/{game-id}/{event-number}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="event-number" style="template" type="xs:int"/>
+                <method id="getRosterAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{game-id}/{event-number}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="event-number" style="template" type="xs:int"/>
+                <method id="getPptReplay" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/edge/skater-detail">
+            <resource path="{playerId}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getSkaterDetailAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{playerId}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getSkaterDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/standings">
+            <resource path="now">
+                <method id="getStandings" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <method id="getStandings" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/player">
+            <resource path="{player}/game-log/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="player" style="template" type="xs:int"/>
+                <method id="getGameLog" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{player}/landing">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="player" style="template" type="xs:int"/>
+                <method id="getPlayerLanding" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{player}/game-log/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="player" style="template" type="xs:int"/>
+                <method id="getGameLog" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/roster-season">
+            <resource path="{team: \w{3}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getRosterSeasonForTeam" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/gamecenter">
+            <resource path="{game-id: \d+}/play-by-play">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getPlayByPlay" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{game-id: \d+}/right-rail">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getRightRail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{game-id: \d+}/landing">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getLanding" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{game-id: \d+}/boxscore">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getBoxscore" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/meta">
+            <method id="get" name="GET">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="players" style="query" type="xs:string"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="teams" style="query" type="xs:string"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="seasonStates" style="query" type="xs:string"/>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="playoff-series/{year}/{series_letter}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="year" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="series_letter" style="template" type="xs:string"/>
+                <method id="getPlayoffSeries" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="game/{game-id: \d+}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getGame" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/wsc/game-story">
+            <resource path="{game-id: \d+}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getGameStory" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/goalie-stats-leaders">
+            <resource path="current">
+                <method id="current" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="categories" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <method id="bySeason" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="categories" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/draft/rankings">
+            <resource path="{year}/{category}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="year" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="category" style="template" type="xs:int"/>
+                <method id="getOdds" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="now">
+                <method id="getOdds" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/playoff-bracket">
+            <resource path="{year: [0-9]{4}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="year" style="template" type="xs:int"/>
+                <method id="getByYear" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/partner-game/{country-code}/now">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="country-code" style="template" type="xs:string"/>
+            <method id="getOdds" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/v1/edge/skater-shot-speed-top-10">
+            <resource path="{positions}/{sortBy}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="positions" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <method id="getGoalieShotLocationDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{positions}/{sortBy}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="positions" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/edge/skater-speed-top-10">
+            <resource path="{positions}/{sortBy}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="positions" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <method id="getSkaterTop10SkatingSpeed" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{positions}/{sortBy}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="positions" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/edge/goalie-edge-save-pctg-top-10">
+            <resource path="{sortBy}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <method id="getGoalieShotLocationDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{sortBy}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sortBy" style="template" type="xs:string"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/network">
+            <resource path="tv-schedule/{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <method id="getTVSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="tv-schedule/now">
+                <method id="getTVSchedule" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="model/v1/openapi.json">
+            <method id="getOpenApi" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                    <representation mediaType="application/yaml"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="v1/schedule-calendar">
+            <resource path="now">
+                <method id="getScheduleCalendar" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{date: [0-9]{4}-[0-9]{2}-[0-9]{2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="date" style="template" type="xs:string"/>
+                <method id="getScheduleCalendar" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/edge/goalie-save-percentage-detail">
+            <resource path="{playerId}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{playerId}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getGoalieShotLocationDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/club-stats-season">
+            <resource path="{team: \w{3}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="team" style="template" type="xs:string"/>
+                <method id="getClubStatsSeason" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="v1/wsc/play-by-play">
+            <resource path="{game-id: \d+}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-id" style="template" type="xs:int"/>
+                <method id="getPlayByPlay" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/v1/smartlinks">
+            <method id="getSmartLinks" name="GET">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="handle" style="query" type="xs:string"/>
+                </request>
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/v1/edge/goalie-detail">
+            <resource path="{playerId}/now">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getGoalieDetailAsOfNow" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="{playerId}/{season: [0-9]{8}}/{game-type: [0-9]{1,2}}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="season" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="game-type" style="template" type="xs:int"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="playerId" style="template" type="xs:int"/>
+                <method id="getGoalieDetail" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>

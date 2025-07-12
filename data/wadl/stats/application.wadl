@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 3.0.11 2023-07-10 11:17:41"/>
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:hint="This is simplified WADL with user and core resources only. To get full WADL with extended resources use the query parameter detail. Link: https://api.nhle.com/stats/rest/application.wadl?detail=true"/>
+    <grammars/>
+    <resources base="https://api.nhle.com/stats/rest/">
+        <resource path="{lang}/config">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/goalie">
+            <resource path="{report}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="report" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+                <method id="getStats" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="isAggregate" style="query" type="xs:boolean"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="isGame" style="query" type="xs:boolean"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="factCayenneExp" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="include" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="exclude" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="cayenneExp" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sort" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="dir" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="start" style="query" type="xs:int"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="{lang}/leaders/goalies/{attribute}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/leaders/skaters/{attribute}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/componentSeason">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/season">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/country">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="/ping">
+            <method id="ping" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/game">
+            <method id="getGame" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/glossary">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/milestones/skaters">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/team">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+            <resource path="{report}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="report" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+                <method id="getStats" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="isAggregate" style="query" type="xs:boolean"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="isGame" style="query" type="xs:boolean"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="factCayenneExp" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="include" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="exclude" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="cayenneExp" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sort" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="dir" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="start" style="query" type="xs:int"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="id/{id}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="id" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+                <method id="get" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="{lang}/skater">
+            <resource path="{report}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="report" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+                <method id="getStats" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="isAggregate" style="query" type="xs:boolean"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="isGame" style="query" type="xs:boolean"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="factCayenneExp" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="include" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="exclude" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="cayenneExp" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="sort" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="dir" style="query" type="xs:string"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="start" style="query" type="xs:int"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="limit" style="query" type="xs:int"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="{lang}/draft">
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/milestones/goalies">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/players">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/shiftcharts">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+        <resource path="{lang}/content/module">
+            <resource path="{templateKey}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="templateKey" style="template" type="xs:string"/>
+                <method id="get" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="{lang}/franchise">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
+    </resources>
+</application>

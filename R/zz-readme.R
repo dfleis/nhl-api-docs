@@ -72,7 +72,7 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
   md_intro <- glue::glue(.sep = " ",
     "This document provides unofficial documentation **{length(endpoints)}**",
     "data endpoints (HTTP GET methods) across **{length(endpoint_groups)}**",
-    "base URL group:"
+    "base URL groups:"
   )
   md_intro_tbl <- knitr::kable(group_lens, col.names = c("Base URL", "Parsed Endpoints"))
   md_intro2 <- glue::glue(.sep = " ",

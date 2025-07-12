@@ -1,0 +1,13 @@
+*.DS_Store
+
+# R session files
+.Rproj.user
+.Rhistory
+*.RData
+*.Rout
+
+# package artifacts
+*.tar.gz
+
+# it does what it says on the tin
+ignore/

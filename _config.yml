@@ -1,0 +1,20 @@
+sources:
+  recs:  https://records.nhl.com/site/api/application.wadl
+  stats: https://api.nhle.com/stats/rest/application.wadl
+  web:   https://api-web.nhle.com/application.wadl
+
+dirs:
+  scripts: R/
+  wadl_dest_dir: data/wadl/
+
+paths:
+  eps_raw: data/parsed/endpoints_raw.rds
+  eps_def: data/parsed/endpoints_def.rds
+  final: data/final/ENDPOINTS.rds
+  readme: README.md
+
+args:
+  cli_defaults:
+    overwrite_sysdata: TRUE
+    register_quietly: FALSE
+    save_raw: TRUE

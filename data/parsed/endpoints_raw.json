@@ -182,14 +182,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "goalie-home-point-streak",
+      "method_id": "get",
+      "path_raw": "team-season-home-loss-streak-start-of-season",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "team-season-home-loss-streak-start-of-season",
+      "method_id": "getGame",
+      "path_raw": "goalie-home-point-streak",
       "query_params": []
     },
     {
@@ -314,14 +314,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getFranchise",
-      "path_raw": "franchise-stanley-cup-final-appearance-streak",
+      "method_id": "get",
+      "path_raw": "skater-playoff-elimination-game-totals",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "skater-playoff-elimination-game-totals",
+      "method_id": "getFranchise",
+      "path_raw": "franchise-stanley-cup-final-appearance-streak",
       "query_params": []
     },
     {
@@ -344,14 +344,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "comeback-franchise-three-goal-games",
+      "method_id": "getSkaterMultiAssistGamesCareer",
+      "path_raw": "skater-multi-assist-games-career",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getSkaterMultiAssistGamesCareer",
-      "path_raw": "skater-multi-assist-games-career",
+      "method_id": "get",
+      "path_raw": "comeback-franchise-three-goal-games",
       "query_params": []
     },
     {
@@ -362,14 +362,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "team-record-december",
+      "method_id": "getGame",
+      "path_raw": "scoring-plateaus",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "scoring-plateaus",
+      "method_id": "get",
+      "path_raw": "team-record-december",
       "query_params": []
     },
     {
@@ -458,12 +458,6 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGRBPlayoffSeriesDetail",
-      "path_raw": "yearly-playoff-series-details",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getCoachMostWins100PlayoffGames",
       "path_raw": "coach-most-wins-100-playoff-games",
       "query_params": []
@@ -472,6 +466,12 @@
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getLogos",
       "path_raw": "logo",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getGRBPlayoffSeriesDetail",
+      "path_raw": "yearly-playoff-series-details",
       "query_params": []
     },
     {
@@ -524,8 +524,8 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getInternationalFastestSkaterGoal",
-      "path_raw": "international-fastest-skater-goals",
+      "method_id": "getCoachStanleyCupFinalStreak",
+      "path_raw": "coach-stanley-cup-final-streak",
       "query_params": []
     },
     {
@@ -536,8 +536,8 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachStanleyCupFinalStreak",
-      "path_raw": "coach-stanley-cup-final-streak",
+      "method_id": "getInternationalFastestSkaterGoal",
+      "path_raw": "international-fastest-skater-goals",
       "query_params": []
     },
     {
@@ -764,14 +764,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getPlayerByGameStats",
-      "path_raw": "playoff-team-series-stats",
+      "method_id": "getGame",
+      "path_raw": "goalie-point-streak",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "goalie-point-streak",
+      "method_id": "getPlayerByGameStats",
+      "path_raw": "playoff-team-series-stats",
       "query_params": []
     },
     {
@@ -788,14 +788,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getFranchise",
-      "path_raw": "franchise-playoff-streak",
+      "method_id": "getCoachCareerRecordsRegularPlusPlayoffs",
+      "path_raw": "coach-career-records-regular-plus-playoffs",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachCareerRecordsRegularPlusPlayoffs",
-      "path_raw": "coach-career-records-regular-plus-playoffs",
+      "method_id": "getFranchise",
+      "path_raw": "franchise-playoff-streak",
       "query_params": []
     },
     {
@@ -836,13 +836,13 @@
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
-      "path_raw": "goalie-playoff-clinching-game-series",
+      "path_raw": "team-season-home-win-streak-start-of-season",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
-      "path_raw": "team-season-home-win-streak-start-of-season",
+      "path_raw": "goalie-playoff-clinching-game-series",
       "query_params": []
     },
     {
@@ -865,6 +865,12 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getInternationalTeamGameRecord",
+      "path_raw": "international-team-game-record",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
       "path_raw": "{franchiseTricode}/content/module/{templateKey}",
       "query_params": [
@@ -873,12 +879,6 @@
           "type": "string"
         }
       ]
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getInternationalTeamGameRecord",
-      "path_raw": "international-team-game-record",
-      "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
@@ -912,14 +912,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "skater-playoff-elimination-game-series",
+      "method_id": "getGame",
+      "path_raw": "goalie-scf-series-shutout-streak",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "goalie-scf-series-shutout-streak",
+      "method_id": "get",
+      "path_raw": "skater-playoff-elimination-game-series",
       "query_params": []
     },
     {
@@ -1134,14 +1134,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "team-season-shootout-records",
+      "method_id": "getFranchise",
+      "path_raw": "franchise",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getFranchise",
-      "path_raw": "franchise",
+      "method_id": "get",
+      "path_raw": "team-season-shootout-records",
       "query_params": []
     },
     {
@@ -1165,13 +1165,13 @@
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
-      "path_raw": "team-playoff-clinching-game-totals",
+      "path_raw": "team-season-win-streak-start-of-season",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
-      "path_raw": "team-season-win-streak-start-of-season",
+      "path_raw": "team-playoff-clinching-game-totals",
       "query_params": []
     },
     {
@@ -1279,25 +1279,25 @@
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getGame",
+      "path_raw": "goalie-career-stats",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getGame",
       "path_raw": "fastest-2-goals-both-teams",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getGame",
-      "path_raw": "goalie-career-stats",
+      "path_raw": "skater-youngest-goal-scorers",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getFranchise",
       "path_raw": "franchise-road-win-streak-vs-franchise",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "skater-youngest-goal-scorers",
       "query_params": []
     },
     {
@@ -1458,14 +1458,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachMostWins150PlayoffGames",
-      "path_raw": "coach-most-wins-150-playoff-games",
+      "method_id": "getSkaterLatestGoAheadGoal",
+      "path_raw": "skater-latest-go-ahead-goal",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getSkaterLatestGoAheadGoal",
-      "path_raw": "skater-latest-go-ahead-goal",
+      "method_id": "getCoachMostWins150PlayoffGames",
+      "path_raw": "coach-most-wins-150-playoff-games",
       "query_params": []
     },
     {
@@ -1476,26 +1476,20 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getInternationalGoaltenderTournament",
-      "path_raw": "international-goaltender-tournament-record",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getGame",
       "path_raw": "skater-real-time-stats-game-hits",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "team-playoff-elimination-game",
+      "method_id": "getInternationalGoaltenderTournament",
+      "path_raw": "international-goaltender-tournament-record",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getRecordMetaDetails",
-      "path_raw": "record-meta-details/{path:.*}",
+      "method_id": "get",
+      "path_raw": "team-playoff-elimination-game",
       "query_params": []
     },
     {
@@ -1508,6 +1502,12 @@
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getCoachCareerRecords",
       "path_raw": "coach-career-records/{id}",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getRecordMetaDetails",
+      "path_raw": "record-meta-details/{path:.*}",
       "query_params": []
     },
     {
@@ -1560,6 +1560,12 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getCoachMostWins300Games",
+      "path_raw": "coach-most-wins-300-games",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getHallOfFameOffice",
       "path_raw": "hof/office",
       "query_params": []
@@ -1568,12 +1574,6 @@
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getOfficeInformation",
       "path_raw": "hof/office/{officeId}",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachMostWins300Games",
-      "path_raw": "coach-most-wins-300-games",
       "query_params": []
     },
     {
@@ -1650,14 +1650,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGoalieOutdoorTotalsGame",
-      "path_raw": "goalie-outdoor-totals-game",
+      "method_id": "getCoachFewestGamesTo800Wins",
+      "path_raw": "coach-fewest-games-to-800-wins",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachFewestGamesTo800Wins",
-      "path_raw": "coach-fewest-games-to-800-wins",
+      "method_id": "getGoalieOutdoorTotalsGame",
+      "path_raw": "goalie-outdoor-totals-game",
       "query_params": []
     },
     {
@@ -1733,14 +1733,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getSkaterPointStreakStartOfCareer",
-      "path_raw": "skater-point-streak-start-of-career",
+      "method_id": "getGoalieGameScoring",
+      "path_raw": "goalie-game-scoring",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGoalieGameScoring",
-      "path_raw": "goalie-game-scoring",
+      "method_id": "getSkaterPointStreakStartOfCareer",
+      "path_raw": "skater-point-streak-start-of-career",
       "query_params": []
     },
     {
@@ -1763,14 +1763,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getRecordVideoDetail",
-      "path_raw": "record-video-detail",
+      "method_id": "getInternationalTeamAllTimeRecord",
+      "path_raw": "international-team-all-time-record",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getInternationalTeamAllTimeRecord",
-      "path_raw": "international-team-all-time-record",
+      "method_id": "getRecordVideoDetail",
+      "path_raw": "record-video-detail",
       "query_params": []
     },
     {
@@ -1799,14 +1799,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "team-season-home-undefeated-streak",
+      "method_id": "getGoalieUndefeatedStreak",
+      "path_raw": "goalie-undefeated-streak",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGoalieUndefeatedStreak",
-      "path_raw": "goalie-undefeated-streak",
+      "method_id": "get",
+      "path_raw": "team-season-home-undefeated-streak",
       "query_params": []
     },
     {
@@ -1901,14 +1901,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachMostWins900Games",
-      "path_raw": "coach-most-wins-900-games",
+      "method_id": "getInternationalTournamentWinner",
+      "path_raw": "international-tournament-winner",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getInternationalTournamentWinner",
-      "path_raw": "international-tournament-winner",
+      "method_id": "getCoachMostWins900Games",
+      "path_raw": "coach-most-wins-900-games",
       "query_params": []
     },
     {
@@ -1925,14 +1925,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "skater-youngest-4-point-games",
+      "method_id": "GoalieShutoutGamesStreakRegularSeason",
+      "path_raw": "goalie-shutout-games-streak-regular-season",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "GoalieShutoutGamesStreakRegularSeason",
-      "path_raw": "goalie-shutout-games-streak-regular-season",
+      "method_id": "getGame",
+      "path_raw": "skater-youngest-4-point-games",
       "query_params": []
     },
     {
@@ -2033,14 +2033,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
-      "path_raw": "team-period-scoring-both-teams",
+      "method_id": "getCoachMostWins600Games",
+      "path_raw": "coach-most-wins-600-games",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachMostWins600Games",
-      "path_raw": "coach-most-wins-600-games",
+      "method_id": "get",
+      "path_raw": "team-period-scoring-both-teams",
       "query_params": []
     },
     {
@@ -2202,12 +2202,6 @@
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
-      "path_raw": "team-season-overtime-games",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "get",
       "path_raw": "team-season-home-win-streak",
       "query_params": []
     },
@@ -2215,6 +2209,12 @@
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getHomeTeamRecords",
       "path_raw": "home-team-record",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "get",
+      "path_raw": "team-season-overtime-games",
       "query_params": []
     },
     {
@@ -2369,14 +2369,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getTeamOutdoorTotalsCareer",
-      "path_raw": "team-outdoor-totals-career",
+      "method_id": "getCoachGameSevenCareer",
+      "path_raw": "coach-game-seven-career",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachGameSevenCareer",
-      "path_raw": "coach-game-seven-career",
+      "method_id": "getTeamOutdoorTotalsCareer",
+      "path_raw": "team-outdoor-totals-career",
       "query_params": []
     },
     {
@@ -2454,6 +2454,12 @@
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getGame",
+      "path_raw": "consecutive-50-goal-seasons",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getGame",
       "path_raw": "milestone-5-goal-game",
       "query_params": []
     },
@@ -2461,12 +2467,6 @@
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getMilestone50GoalSeasons",
       "path_raw": "milestone-5-goal-game/{id}",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getGame",
-      "path_raw": "consecutive-50-goal-seasons",
       "query_params": []
     },
     {
@@ -2531,14 +2531,14 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getSkaterMultipointGamesCareerByPosition",
-      "path_raw": "skater-multipoint-games-career-by-position",
+      "method_id": "getCoachFirstWin",
+      "path_raw": "coach-first-win",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getCoachFirstWin",
-      "path_raw": "coach-first-win",
+      "method_id": "getSkaterMultipointGamesCareerByPosition",
+      "path_raw": "skater-multipoint-games-career-by-position",
       "query_params": []
     },
     {
@@ -2657,26 +2657,26 @@
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getTeamOutdoorTotalsPeriodOneTeam",
-      "path_raw": "team-outdoor-totals-period-one-team",
-      "query_params": []
-    },
-    {
-      "base_url": "https://records.nhl.com/site/api/",
       "method_id": "get",
       "path_raw": "team-season-win-streak",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
-      "method_id": "getAwayTeamRecords",
-      "path_raw": "away-team-record",
+      "method_id": "getTeamOutdoorTotalsPeriodOneTeam",
+      "path_raw": "team-outdoor-totals-period-one-team",
       "query_params": []
     },
     {
       "base_url": "https://records.nhl.com/site/api/",
       "method_id": "getSeasonAttendance",
       "path_raw": "attendance",
+      "query_params": []
+    },
+    {
+      "base_url": "https://records.nhl.com/site/api/",
+      "method_id": "getAwayTeamRecords",
+      "path_raw": "away-team-record",
       "query_params": []
     },
     {
@@ -2697,6 +2697,12 @@
       "base_url": "https://api.nhle.com/stats/rest/",
       "method_id": "get",
       "path_raw": "{lang}/config",
+      "query_params": []
+    },
+    {
+      "base_url": "https://api.nhle.com/stats/rest/",
+      "method_id": "get",
+      "path_raw": "{lang}/leaders/goalies/{attribute}",
       "query_params": []
     },
     {
@@ -2749,12 +2755,6 @@
     {
       "base_url": "https://api.nhle.com/stats/rest/",
       "method_id": "get",
-      "path_raw": "{lang}/leaders/goalies/{attribute}",
-      "query_params": []
-    },
-    {
-      "base_url": "https://api.nhle.com/stats/rest/",
-      "method_id": "get",
       "path_raw": "{lang}/leaders/skaters/{attribute}",
       "query_params": []
     },
@@ -2791,13 +2791,13 @@
     {
       "base_url": "https://api.nhle.com/stats/rest/",
       "method_id": "get",
-      "path_raw": "{lang}/glossary",
+      "path_raw": "{lang}/milestones/skaters",
       "query_params": []
     },
     {
       "base_url": "https://api.nhle.com/stats/rest/",
       "method_id": "get",
-      "path_raw": "{lang}/milestones/skaters",
+      "path_raw": "{lang}/glossary",
       "query_params": []
     },
     {

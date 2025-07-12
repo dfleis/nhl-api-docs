@@ -148,9 +148,9 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
 
       # Add a sub-header for the specific endpoint
       md_body_content <- c(md_body_content, paste0("### ", ep$label))
-      md_body_content <- c(md_body_content, paste0("**Base URL:** `", ep$base_url, "`"))
-      md_body_content <- c(md_body_content, paste0("**Path template:** `", ep$path_template, "`"))
-      md_body_content <- c(md_body_content, paste0("**Full URL:** `", ep$url, "`"))
+      md_body_content <- c(md_body_content, paste0("**Base URL:** `", ep$base_url, "`"), "")
+      md_body_content <- c(md_body_content, paste0("**Path template:** `", ep$path_template, "`"), "")
+      md_body_content <- c(md_body_content, paste0("**Full URL:** `", ep$url, "`"), "")
 
       # Function to create a markdown table from a parameters data frame
       .generate_params_table <- function(params) {
@@ -173,7 +173,7 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
       } else {
         c("**Path parameters:**", path_params_tbl)
       }
-      md_body_content <- c(md_body_content, path_params_sec)
+      md_body_content <- c(md_body_content, path_params_sec, "")
 
       # Add query params table
       query_params_tbl <- .generate_params_table(ep$query_params)

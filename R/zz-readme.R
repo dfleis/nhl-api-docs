@@ -69,6 +69,16 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
   cli::cli_alert_info("Main title and introductory comments...")
 
   md_title <- "# **Unofficial** NHL Data API Reference Documentation"
+  
+  
+  md_TODO_header <- "## TODO"
+  md_TODO <- glue::glue(.sep = " ",
+    "* Bring TOC up to the top\n",
+    "* Add intro to TOC\n",
+    "* Somehow think of a sensible way to organize the 500+ endpoints\n"
+  )
+  
+  md_intro_header <- "## Introduction"
   md_intro <- glue::glue(.sep = " ",
     "This document provides unofficial documentation **{length(endpoints)}**",
     "data endpoints (HTTP GET methods) across **{length(endpoint_groups)}**",
@@ -106,8 +116,12 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
   )
   
   md_intro_content <- c(
-    md_title, "", md_intro, "", md_intro_tbl, "", md_intro2, "",
-    md_intro3, "", edge_eps_tbl, "", md_intro4
+    md_title, "", 
+    md_TODO_header, "", md_TODO, "", 
+    md_intro_header, "", md_intro, "", md_intro_tbl, "", 
+    md_intro2, "", md_intro3, "", 
+    edge_eps_tbl, "", 
+    md_intro4
   )
 
   #--- Table of contents...

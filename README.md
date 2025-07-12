@@ -1,5 +1,13 @@
 # **Unofficial** NHL Data API Reference Documentation
 
+## TODO
+
+* Bring TOC up to the top
+* Add intro to TOC
+* Somehow think of a sensible way to organize the 500+ endpoints
+
+## Introduction
+
 This document provides unofficial documentation **545** data endpoints (HTTP GET methods) across **3** base URL groups:
 
 |Base URL                          | Parsed Endpoints|

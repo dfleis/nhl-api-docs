@@ -178,7 +178,7 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
       # Add query params table
       query_params_tbl <- .generate_params_table(ep$query_params)
       query_params_sec <- if (is.null(query_params_tbl)) {
-        "**Query parameters:** (none)" # Appear on the same line if "(none)"
+        "**Query parameters (documented):** (none)" # Appear on the same line if "(none)"
       } else {
         c("**Query parameters (documented):**", query_params_tbl)
       }

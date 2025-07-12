@@ -58,7 +58,7 @@ More details on these endpoints (their path parameters, any documented query par
 |team  |\w{3}             |
 |month |[0-9]{4}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -74,7 +74,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -91,7 +91,7 @@ More details on these endpoints (their path parameters, any documented query par
 |team   |\w{3}    |
 |season |[0-9]{8} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -107,7 +107,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -124,7 +124,7 @@ More details on these endpoints (their path parameters, any documented query par
 |team |\w{3}                      |
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -140,7 +140,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -158,7 +158,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -174,7 +174,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -190,7 +190,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -207,7 +207,7 @@ More details on these endpoints (their path parameters, any documented query par
 |year  |[0-9]{4}   |
 |round |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -223,7 +223,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------|
 |year |[0-9]{4} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -236,7 +236,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -253,7 +253,7 @@ More details on these endpoints (their path parameters, any documented query par
 |year     |NA    |
 |category |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -266,7 +266,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -279,7 +279,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -297,7 +297,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -313,7 +313,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |playerId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -331,7 +331,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -347,7 +347,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |sortBy |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -365,7 +365,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -381,7 +381,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |playerId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -399,7 +399,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -415,7 +415,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |playerId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -434,7 +434,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -451,7 +451,7 @@ More details on these endpoints (their path parameters, any documented query par
 |category |NA    |
 |sortBy   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -469,7 +469,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -485,7 +485,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |playerId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -503,7 +503,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -519,7 +519,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |playerId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -538,7 +538,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season    |[0-9]{8}   |
 |gameType  |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -555,7 +555,7 @@ More details on these endpoints (their path parameters, any documented query par
 |positions |NA    |
 |sortBy    |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -573,7 +573,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -589,7 +589,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |playerId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -608,7 +608,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season    |[0-9]{8}   |
 |gameType  |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -625,7 +625,7 @@ More details on these endpoints (their path parameters, any documented query par
 |positions |NA    |
 |sortBy    |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -641,7 +641,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -657,7 +657,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -673,7 +673,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -689,7 +689,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -740,7 +740,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -774,7 +774,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -791,7 +791,7 @@ More details on these endpoints (their path parameters, any documented query par
 |year          |NA    |
 |series_letter |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -804,7 +804,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -820,7 +820,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------------------------|
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -833,7 +833,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -849,7 +849,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:-----------|:-----|
 |countryCode |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -867,7 +867,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -883,7 +883,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |player |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -899,7 +899,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |player |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -912,7 +912,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -928,7 +928,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------|
 |year |[0-9]{4} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -944,7 +944,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:--------|
 |season |[0-9]{8} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -960,7 +960,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----------|:-----|
 |postalCode |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -977,7 +977,7 @@ More details on these endpoints (their path parameters, any documented query par
 |gameId      |NA    |
 |eventNumber |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -994,7 +994,7 @@ More details on these endpoints (their path parameters, any documented query par
 |gameId      |NA    |
 |eventNumber |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1010,7 +1010,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1027,7 +1027,7 @@ More details on these endpoints (their path parameters, any documented query par
 |team   |\w{3}    |
 |season |[0-9]{8} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1043,7 +1043,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1059,7 +1059,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1075,7 +1075,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------------------------|
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1091,7 +1091,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------------------------|
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1104,7 +1104,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1117,7 +1117,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1134,7 +1134,7 @@ More details on these endpoints (their path parameters, any documented query par
 |season       |[0-9]{8} |
 |seriesLetter |\w       |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1150,7 +1150,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------------------------|
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1163,7 +1163,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1179,7 +1179,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------------------------|
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1192,7 +1192,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1208,7 +1208,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |team |\w{3} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1221,7 +1221,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1291,7 +1291,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:--------------------------|
 |date |[0-9]{4}-[0-9]{2}-[0-9]{2} |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1304,7 +1304,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1317,7 +1317,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1349,7 +1349,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1365,7 +1365,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |gameId |\d+   |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1385,7 +1385,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1401,7 +1401,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1418,7 +1418,7 @@ More details on these endpoints (their path parameters, any documented query par
 |lang        |NA    |
 |templateKey |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1434,7 +1434,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1450,7 +1450,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1466,7 +1466,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1482,7 +1482,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1498,7 +1498,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1544,7 +1544,7 @@ More details on these endpoints (their path parameters, any documented query par
 |lang      |NA    |
 |attribute |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1561,7 +1561,7 @@ More details on these endpoints (their path parameters, any documented query par
 |lang      |NA    |
 |attribute |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1577,7 +1577,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1593,7 +1593,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1606,7 +1606,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1622,7 +1622,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1638,7 +1638,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1654,7 +1654,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1699,7 +1699,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |lang |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1716,7 +1716,7 @@ More details on these endpoints (their path parameters, any documented query par
 |lang |NA    |
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1762,7 +1762,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1775,7 +1775,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1788,7 +1788,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1801,7 +1801,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1814,7 +1814,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1827,7 +1827,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1840,7 +1840,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1853,7 +1853,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1866,7 +1866,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1879,7 +1879,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1892,7 +1892,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1905,7 +1905,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1918,7 +1918,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1954,7 +1954,7 @@ More details on these endpoints (their path parameters, any documented query par
 |trophyId |NA    |
 |seasonId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1967,7 +1967,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1980,7 +1980,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -1993,7 +1993,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2009,7 +2009,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2022,7 +2022,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2035,7 +2035,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2048,7 +2048,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2061,7 +2061,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2074,7 +2074,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2087,7 +2087,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2100,7 +2100,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2113,7 +2113,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2126,7 +2126,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2139,7 +2139,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2152,7 +2152,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2165,7 +2165,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2178,7 +2178,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2191,7 +2191,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2204,7 +2204,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2217,7 +2217,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2230,7 +2230,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2243,7 +2243,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2256,7 +2256,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2272,7 +2272,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2285,7 +2285,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2298,7 +2298,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2314,7 +2314,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2327,7 +2327,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2340,7 +2340,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2353,7 +2353,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2369,7 +2369,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2382,7 +2382,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2395,7 +2395,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2408,7 +2408,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2421,7 +2421,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2434,7 +2434,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2447,7 +2447,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2460,7 +2460,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2473,7 +2473,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2486,7 +2486,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2499,7 +2499,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2512,7 +2512,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2525,7 +2525,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2538,7 +2538,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2551,7 +2551,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2564,7 +2564,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2577,7 +2577,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2590,7 +2590,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2603,7 +2603,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2616,7 +2616,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2629,7 +2629,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2642,7 +2642,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2655,7 +2655,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2668,7 +2668,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2681,7 +2681,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2694,7 +2694,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2707,7 +2707,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2720,7 +2720,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2733,7 +2733,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2746,7 +2746,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2759,7 +2759,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2772,7 +2772,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2785,7 +2785,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2822,7 +2822,7 @@ More details on these endpoints (their path parameters, any documented query par
 |templateKey |NA    |
 |seasonId    |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2835,7 +2835,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2867,7 +2867,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |teamId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2899,7 +2899,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2912,7 +2912,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2925,7 +2925,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2938,7 +2938,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2951,7 +2951,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2964,7 +2964,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -2980,7 +2980,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3026,7 +3026,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3039,7 +3039,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3052,7 +3052,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3065,7 +3065,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3078,7 +3078,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3091,7 +3091,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3104,7 +3104,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3117,7 +3117,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3130,7 +3130,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3143,7 +3143,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3156,7 +3156,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3169,7 +3169,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3182,7 +3182,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3195,7 +3195,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3208,7 +3208,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3221,7 +3221,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3234,7 +3234,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3247,7 +3247,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3260,7 +3260,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3273,7 +3273,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3286,7 +3286,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3299,7 +3299,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3312,7 +3312,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3325,7 +3325,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3338,7 +3338,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3351,7 +3351,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3364,7 +3364,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3377,7 +3377,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3390,7 +3390,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3403,7 +3403,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3416,7 +3416,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3429,7 +3429,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3442,7 +3442,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3455,7 +3455,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3468,7 +3468,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3481,7 +3481,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3494,7 +3494,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3507,7 +3507,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3520,7 +3520,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3533,7 +3533,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3546,7 +3546,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3559,7 +3559,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3572,7 +3572,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3585,7 +3585,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3598,7 +3598,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3611,7 +3611,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3624,7 +3624,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3637,7 +3637,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3650,7 +3650,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3666,7 +3666,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3679,7 +3679,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3692,7 +3692,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3705,7 +3705,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3718,7 +3718,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3731,7 +3731,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3744,7 +3744,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3757,7 +3757,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3770,7 +3770,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3783,7 +3783,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3796,7 +3796,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3809,7 +3809,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3822,7 +3822,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3835,7 +3835,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3848,7 +3848,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3861,7 +3861,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3874,7 +3874,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3887,7 +3887,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3900,7 +3900,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3913,7 +3913,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3926,7 +3926,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3939,7 +3939,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3952,7 +3952,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3965,7 +3965,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3978,7 +3978,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -3991,7 +3991,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4004,7 +4004,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4017,7 +4017,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4030,7 +4030,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4043,7 +4043,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4056,7 +4056,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4069,7 +4069,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4082,7 +4082,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4095,7 +4095,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4108,7 +4108,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4121,7 +4121,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4134,7 +4134,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4147,7 +4147,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4160,7 +4160,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4173,7 +4173,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4186,7 +4186,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4199,7 +4199,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4212,7 +4212,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4225,7 +4225,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4238,7 +4238,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4251,7 +4251,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4264,7 +4264,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4277,7 +4277,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4290,7 +4290,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4303,7 +4303,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4319,7 +4319,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |officeId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4332,7 +4332,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4348,7 +4348,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |officeId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4361,7 +4361,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4374,7 +4374,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4387,7 +4387,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4400,7 +4400,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4413,7 +4413,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4426,7 +4426,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4439,7 +4439,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4452,7 +4452,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4465,7 +4465,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4478,7 +4478,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4491,7 +4491,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4504,7 +4504,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4517,7 +4517,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4530,7 +4530,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4543,7 +4543,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4556,7 +4556,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4569,7 +4569,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4582,7 +4582,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4595,7 +4595,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4608,7 +4608,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4621,7 +4621,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4634,7 +4634,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4647,7 +4647,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4660,7 +4660,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4673,7 +4673,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4686,7 +4686,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4699,7 +4699,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4712,7 +4712,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4725,7 +4725,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4741,7 +4741,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----------------|:-----|
 |franchiseTricode |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4773,7 +4773,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4789,7 +4789,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4802,7 +4802,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4818,7 +4818,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4831,7 +4831,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4847,7 +4847,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4860,7 +4860,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4876,7 +4876,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4889,7 +4889,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4905,7 +4905,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4918,7 +4918,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4931,7 +4931,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4944,7 +4944,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4957,7 +4957,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4973,7 +4973,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |type |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4986,7 +4986,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -4999,7 +4999,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5012,7 +5012,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5025,7 +5025,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5041,7 +5041,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------|:-----|
 |teamId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5054,7 +5054,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5070,7 +5070,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |id   |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5083,7 +5083,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5096,7 +5096,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5109,7 +5109,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5122,7 +5122,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5135,7 +5135,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5148,7 +5148,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5161,7 +5161,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5174,7 +5174,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5187,7 +5187,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5200,7 +5200,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5216,7 +5216,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:--------|:-----|
 |seasonId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5232,7 +5232,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:------------|:-----|
 |seriesLetter |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5245,7 +5245,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5258,7 +5258,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5271,7 +5271,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5284,7 +5284,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5300,7 +5300,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----------------|:-----|
 |franchiseTricode |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5316,7 +5316,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:----|:-----|
 |path |.*    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5329,7 +5329,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5342,7 +5342,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5355,7 +5355,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5368,7 +5368,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5381,7 +5381,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5394,7 +5394,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5407,7 +5407,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5420,7 +5420,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5433,7 +5433,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5446,7 +5446,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5459,7 +5459,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5472,7 +5472,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5485,7 +5485,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5498,7 +5498,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5511,7 +5511,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5524,7 +5524,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5537,7 +5537,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5550,7 +5550,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5563,7 +5563,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5576,7 +5576,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5589,7 +5589,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5602,7 +5602,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5615,7 +5615,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5628,7 +5628,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5641,7 +5641,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5654,7 +5654,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5667,7 +5667,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5680,7 +5680,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5693,7 +5693,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5706,7 +5706,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5719,7 +5719,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5732,7 +5732,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5745,7 +5745,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5758,7 +5758,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5771,7 +5771,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5784,7 +5784,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5797,7 +5797,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5810,7 +5810,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5823,7 +5823,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5836,7 +5836,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5849,7 +5849,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5862,7 +5862,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5875,7 +5875,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5888,7 +5888,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5901,7 +5901,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5914,7 +5914,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5927,7 +5927,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5940,7 +5940,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5953,7 +5953,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5966,7 +5966,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5979,7 +5979,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -5992,7 +5992,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6005,7 +6005,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6018,7 +6018,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6031,7 +6031,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6044,7 +6044,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6057,7 +6057,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6070,7 +6070,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6083,7 +6083,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6096,7 +6096,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6109,7 +6109,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6122,7 +6122,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6135,7 +6135,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6148,7 +6148,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6161,7 +6161,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6174,7 +6174,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6187,7 +6187,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6200,7 +6200,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6213,7 +6213,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6226,7 +6226,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6239,7 +6239,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6252,7 +6252,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6265,7 +6265,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6278,7 +6278,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6291,7 +6291,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6304,7 +6304,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6317,7 +6317,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6330,7 +6330,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6343,7 +6343,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6356,7 +6356,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6369,7 +6369,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6382,7 +6382,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6395,7 +6395,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6408,7 +6408,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6421,7 +6421,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6434,7 +6434,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6447,7 +6447,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6460,7 +6460,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6473,7 +6473,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6486,7 +6486,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6499,7 +6499,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6512,7 +6512,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6525,7 +6525,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6538,7 +6538,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6551,7 +6551,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6564,7 +6564,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6577,7 +6577,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6590,7 +6590,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6603,7 +6603,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6616,7 +6616,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6629,7 +6629,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6642,7 +6642,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6655,7 +6655,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6668,7 +6668,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6681,7 +6681,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6694,7 +6694,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6707,7 +6707,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6720,7 +6720,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6733,7 +6733,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6746,7 +6746,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6759,7 +6759,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6772,7 +6772,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6785,7 +6785,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6798,7 +6798,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6811,7 +6811,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6824,7 +6824,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6837,7 +6837,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6850,7 +6850,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6863,7 +6863,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6876,7 +6876,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6889,7 +6889,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6902,7 +6902,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6915,7 +6915,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6928,7 +6928,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6941,7 +6941,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6954,7 +6954,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6967,7 +6967,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6980,7 +6980,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -6993,7 +6993,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7006,7 +7006,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7019,7 +7019,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7032,7 +7032,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7045,7 +7045,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7058,7 +7058,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7071,7 +7071,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7084,7 +7084,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7097,7 +7097,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7110,7 +7110,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7123,7 +7123,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7136,7 +7136,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7149,7 +7149,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7162,7 +7162,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7175,7 +7175,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7188,7 +7188,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7201,7 +7201,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7214,7 +7214,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7227,7 +7227,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7240,7 +7240,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7253,7 +7253,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7266,7 +7266,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7279,7 +7279,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7292,7 +7292,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7305,7 +7305,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7318,7 +7318,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7331,7 +7331,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7344,7 +7344,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7357,7 +7357,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7370,7 +7370,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7383,7 +7383,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7396,7 +7396,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7409,7 +7409,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7422,7 +7422,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7435,7 +7435,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7448,7 +7448,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7461,7 +7461,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7474,7 +7474,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7487,7 +7487,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7500,7 +7500,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7513,7 +7513,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7526,7 +7526,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7539,7 +7539,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7552,7 +7552,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7565,7 +7565,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7581,7 +7581,7 @@ More details on these endpoints (their path parameters, any documented query par
 |:-----------|:-----|
 |franchiseId |NA    |
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7594,7 +7594,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 
@@ -7607,7 +7607,7 @@ More details on these endpoints (their path parameters, any documented query par
 
 **Path parameters:** (none)
 
-**Query parameters:** (none)
+**Query parameters (documented):** (none)
 
 ---
 

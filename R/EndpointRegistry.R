@@ -20,9 +20,9 @@ EndpointRegistry <- R6::R6Class(
 
     # Helper function to print a formatted summary of a single entry
     .entry_printer = function(index) {
-      url <- names(private$.entries)[index]
-      endpoint <- private$.entries[[url]]$endpoint
-      label    <- private$.resolved_labels[[url]]
+      url_key  <- names(private$.entries)[index]
+      endpoint <- private$.entries[[url_key]]$endpoint
+      label    <- private$.resolved_labels[[url_key]]
 
       cli::cli_text("{.cls {class(endpoint)[1]}} {cli::col_yellow({label})}")
       print(endpoint, .print_class = FALSE); cli::cli_text()
@@ -35,23 +35,23 @@ EndpointRegistry <- R6::R6Class(
   public = list(
     #' @description Initialize a new EndpointRegistry.
     #' Creates an empty registry with clean state-tracking maps.
-    initialize = function(ep_defs = NULL, ...) {
-      private$.entries <- list()
+    initialize = function(ep_specs = NULL, ...) {
+      private$.entries                   <- list()
       private$.short_label_to_counts_map <- list()
       private$.short_label_to_url_map    <- list()
       private$.resolved_labels           <- list()
 
-      if (is.null(ep_defs)) return (invisible(self))
+      if (is.null(ep_specs)) return (invisible(self))
       # TODO (Medium priority). This is just a heuristic for detecting
-      # TODO whether the `ep_defs` list is a list holding the values
-      # TODO for a single endpoint definition or whether it's a list
-      # TODO of lists holding many endpoint definitions.
-      is_single_add <- is.list(ep_defs) && ("base_url" %in% names(ep_defs))
+      # TODO whether the `ep_specs` list is a list holding the values
+      # TODO for a single endpoint specification, or whether it's a list
+      # TODO of lists holding the specifications for many endpoints.
+      is_single_add <- is.list(ep_specs) && ("base_url" %in% names(ep_specs))
 
       if (is_single_add) {
-        self$add_endpoint(ep_defs, ...)
+        self$add_endpoint(ep_specs, ...)
       } else {
-        self$add_endpoints(ep_defs, ...)
+        self$add_endpoints(ep_specs, ...)
       }
       invisible(self)
     },
@@ -59,19 +59,19 @@ EndpointRegistry <- R6::R6Class(
     #' @description Add a single endpoint and resolve label collisions
     #'    incrementally
     #'
-    #' @param ep_def A list containing the named arguments for creating
-    #'    a new `Endpoint`, i.e. its definition.
+    #' @param ep_spec A list containing the named arguments for creating
+    #'    a new `Endpoint`, i.e. an endpoint specification.
     #' @param .quiet Logical. If `TRUE`, suppresses informational messages
     #'    about collision resolution.
-    add_endpoint = function(ep_def, .quiet = FALSE) {
+    add_endpoint = function(ep_spec, .quiet = FALSE) {
       ### Initialize the Endpoint and EndpointLabelMaker
-      endpoint <- do.call(Endpoint$new, ep_def)
-      url <- endpoint$url # URL used as a uniquely identifying key
+      endpoint <- do.call(Endpoint$new, ep_spec)
+      url_key <- endpoint$url_template # URL used as a uniquely identifying key
 
-      if (url %in% names(private$.entries)) {
+      if (url_key %in% names(private$.entries)) {
         if (!isTRUE(.quiet)) {
           cli::cli_alert_warning(
-            "{cli::col_yellow(\"Skipping duplicate endpoint\")}: {.emph {url}}"
+            "{cli::col_yellow(\"Skipping duplicate endpoint\")}: {.emph {url_key}}"
           )
           cli::cli_text()
         }
@@ -79,7 +79,7 @@ EndpointRegistry <- R6::R6Class(
       }
 
       label_maker <- do.call(EndpointLabelMaker$new, endpoint$metadata)
-      private$.entries[[url]] <- list(endpoint = endpoint, label_maker = label_maker)
+      private$.entries[[url_key]] <- list(endpoint = endpoint, label_maker = label_maker)
 
       ### Incremental collision resolution for the newly added endpoint
       short_label <- label_maker$short_label
@@ -89,27 +89,27 @@ EndpointRegistry <- R6::R6Class(
 
       if (this_count == 0L) {
         # Case A: New, unique short_label
-        private$.resolved_labels[[url]] <- short_label
+        private$.resolved_labels[[url_key]] <- short_label
       } else if (this_count == 1L) {
         # Case B: First collision for this short_label
         # This endpoint must use it's short label
-        private$.resolved_labels[[url]] <- long_label
+        private$.resolved_labels[[url_key]] <- long_label
 
         # We must also update the previous endpoint to use its own long label
-        prev_url <- private$.short_label_to_url_map[[short_label]][1L]
-        prev_label_maker <- private$.entries[[prev_url]]$label_maker
-        private$.resolved_labels[[prev_url]] <- prev_label_maker$long_label
+        prev_url_key <- private$.short_label_to_url_map[[short_label]][1L]
+        prev_label_maker <- private$.entries[[prev_url_key]]$label_maker
+        private$.resolved_labels[[prev_url_key]] <- prev_label_maker$long_label
 
         if (isTRUE(!.quiet)) {
           cli::cli_inform(c(
             "!" = "Resolving collision for label {cli::col_yellow({short_label})}:"
           ))
           cli::cli_alert_info(paste(
-            "New endpoint {.url {url}} will use",
+            "New endpoint {.url {url_key}} will use",
             "{cli::col_yellow({long_label})}"
           ))
           cli::cli_alert_info(paste(
-            "Previous endpoint {.url {prev_url}} will use",
+            "Previous endpoint {.url {prev_url_key}} will use",
             "{cli::col_yellow({prev_label_maker$long_label})}"
           ))
           cli::cli_text()
@@ -147,28 +147,29 @@ EndpointRegistry <- R6::R6Class(
         # (**) To be precise, because labels are used downstream to specify
         # function names, it would have to be a properly formatted full URL
         # that substitutes/drops non-standard characters for function naming.
-        private$.resolved_labels[[url]] <- long_label
+        private$.resolved_labels[[url_key]] <- long_label
       }
 
       ### Update state-tracking maps with the new endpoint's info.
       private$.short_label_to_counts_map[[short_label]] <- this_count + 1
       private$.short_label_to_url_map[[short_label]] <-
-        c(private$.short_label_to_url_map[[short_label]], url)
+        c(private$.short_label_to_url_map[[short_label]], url_key)
 
       invisible(self)
     },
 
-    #' @description Add multiple endpoints from a list of definitions.
-    #' @param ep_defs A list where each element is a list of endpoint
-    #'    definitions, iterated over by `self$add_endpoint()`.
+    #' @description Add multiple endpoints from a list of endpoint specifications.
+    #'
+    #' @param ep_specs A list where each element is a list of endpoint
+    #'    specifications, iterated over by `self$add_endpoint()`.
     #' @param .quiet Logical. If `TRUE`, suppresses collision messaging.
-    add_endpoints = function(ep_defs, .quiet = FALSE) {
-      cli::cli_alert_info("Adding {length(ep_defs)} endpoint{?s}...")
+    add_endpoints = function(ep_specs, .quiet = FALSE) {
+      cli::cli_alert_info("Adding {length(ep_specs)} endpoint{?s}...")
       cli::cli_text()
 
-      purrr::walk(ep_defs, ~self$add_endpoint(.x, .quiet = .quiet))
+      purrr::walk(ep_specs, ~self$add_endpoint(.x, .quiet = .quiet))
       cli::cli_alert_success(paste(
-        "Added {length(ep_defs)} endpoint{?s}. The registry now contains",
+        "Added {length(ep_specs)} endpoint{?s}. The registry now contains",
         "{cli::col_yellow(length(private$.entries))} endpoint{?s}."
       ))
       invisible(self)

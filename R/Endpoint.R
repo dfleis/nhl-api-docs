@@ -9,7 +9,7 @@ Endpoint <- R6::R6Class(
     .path_template = NULL,
     .query_params  = NULL,
 
-    .url           = NULL,
+    .url_template  = NULL,
     .path_params   = NULL,
 
     #--- Private helpers
@@ -65,7 +65,10 @@ Endpoint <- R6::R6Class(
       private$.path_template <- path_resources$template
       private$.path_params   <- path_resources$params
 
-      private$.url <- .validate_url(private$.path_template, private$.base_url)
+      private$.url_template <- .validate_url(
+        private$.path_template,
+        private$.base_url
+      )
     },
 
     print = function(..., indent_str = "  ", .print_class = TRUE) {
@@ -73,9 +76,9 @@ Endpoint <- R6::R6Class(
       query_params <- private$.query_params
 
       if (!isFALSE(.print_class)) cli::cli_text("{.cls {class(self)[1]}}")
-      cat(" "); cli::cli_text("{.field URL}: {cli::col_blue({self$url})}")
       cat(" "); cli::cli_text("{.field Base URL}: {cli::col_blue({private$.base_url})}")
       cat(" "); cli::cli_text("{.field Path template}: {cli::col_blue(private$.path_template)}")
+      cat(" "); cli::cli_text("{.field URL template}: {cli::col_blue({self$url_template})}")
 
       path_fmt <- "{.field Path parameters}:"
       if (NROW(path_params) == 0L) {
@@ -100,14 +103,14 @@ Endpoint <- R6::R6Class(
   #----- Active (active bindings)
   #--------------------------------------------------
   active = list(
-    url = function(value) {
-      if (missing(value)) return (private$.url)
-      else cli::cli_abort(c("x" = "Endpoint field `$url` is read-only."))
+    url_template = function(value) {
+      if (missing(value)) return (private$.url_template)
+      else cli::cli_abort(c("x" = "Endpoint field `$url_template` is read-only."))
     },
     metadata = function(value) {
       if (missing(value)) {
         list(
-          url           = private$.url,
+          url_template  = private$.url_template,
           base_url      = private$.base_url,
           path_template = private$.path_template,
           path_params   = private$.path_params,

@@ -27,15 +27,15 @@ local({
 
 make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.md") {
   cli::cli_h1("{format(Sys.time())} :: Start README generation")
-  
+
   #----- Loading, restructure data
   cli::cli_h2("Prepare data")
-  
+
   endpoints <- tryCatch(readRDS(endpoints_rds), error = function(e) e, warning = function(w) w)
   if (rlang::is_error(endpoints) || rlang::is_warning(endpoints)) {
     rlang::abort(message = endpoints$message)
   }
-  
+
   cli::cli_inform(c(
    "v" = "Read {.path {endpoints_rds}}",
    "i" = paste(
@@ -69,15 +69,15 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
   cli::cli_alert_info("Main title and introductory comments...")
 
   md_title <- "# **Unofficial** NHL Data API Reference Documentation"
-  
-  
+
+
   md_TODO_header <- "## TODO"
   md_TODO <- glue::glue(.sep = " ",
     "* Bring TOC up to the top\n",
     "* Add intro to TOC\n",
     "* Somehow think of a sensible way to organize the 500+ endpoints\n"
   )
-  
+
   md_intro_header <- "## Introduction"
   md_intro <- glue::glue(.sep = " ",
     "This document provides unofficial documentation **{length(endpoints)}**",
@@ -96,14 +96,14 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
     "so that each endpoint could have a unique and (relatively) simple ID",
     "when grouped together across the base URLs."
   )
-  
+
   edge_eps <- endpoints[grepl("^edge", names(endpoints))]
   edge_eps_path <- purrr::imap_chr(edge_eps, "path_template")
   edge_eps_base_url <- purrr::imap_chr(edge_eps, "base_url")
   edge_df <- dplyr::bind_cols(names(edge_eps_path), edge_eps_path, edge_eps_base_url)
   edge_eps_tbl <- knitr::kable(edge_df, format = "pipe", col.names = c("Label", "Path", "Base URL"))
   md_intro3 <- glue::glue(.sep = " ",
-    "These include **{length(edge_eps)}** NHL Edge statistics endpoints", 
+    "These include **{length(edge_eps)}** NHL Edge statistics endpoints",
     "(or, at least the path would suggest that's the case -- I havent't",
     "fully explored these myself just yet). They seem to be all prefixed with",
     "`edge_`:"
@@ -114,13 +114,13 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
     "query parameters), as well as the other 500+ parsed endpoints are found",
     "immediately below, grouped by base URL."
   )
-  
+
   md_intro_content <- c(
-    md_title, "", 
-    md_TODO_header, "", md_TODO, "", 
-    md_intro_header, "", md_intro, "", md_intro_tbl, "", 
-    md_intro2, "", md_intro3, "", 
-    edge_eps_tbl, "", 
+    md_title, "",
+    md_TODO_header, "", md_TODO, "",
+    md_intro_header, "", md_intro, "", md_intro_tbl, "",
+    md_intro2, "", md_intro3, "",
+    edge_eps_tbl, "",
     md_intro4
   )
 
@@ -133,15 +133,15 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
 
   md_toc_header <- "## Table of Contents"
   md_toc_body <- paste0(
-    1:length(base_url_subsec_title), 
-    ". [`", 
-    base_url_subsec_title, 
-    "`](#", 
-    base_url_anchors, 
+    1:length(base_url_subsec_title),
+    ". [`",
+    base_url_subsec_title,
+    "`](#",
+    base_url_anchors,
     ")"
   )
   md_toc_content <- c(md_toc_header, "", md_toc_body)
-  
+
   #--- Main body...
   md_body_content <- c()
 
@@ -164,7 +164,7 @@ make_readme <- function(endpoints_rds = .endpoints_rds_path, destfile = "README.
       md_body_content <- c(md_body_content, paste0("### ", ep$label))
       md_body_content <- c(md_body_content, paste0("**Base URL:** `", ep$base_url, "`"), "")
       md_body_content <- c(md_body_content, paste0("**Path template:** `", ep$path_template, "`"), "")
-      md_body_content <- c(md_body_content, paste0("**Full URL:** `", ep$url, "`"), "")
+      md_body_content <- c(md_body_content, paste0("**URL template:** `", ep$url, "`"), "")
 
       # Function to create a markdown table from a parameters data frame
       .generate_params_table <- function(params) {

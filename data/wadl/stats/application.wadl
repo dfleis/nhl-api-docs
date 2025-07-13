@@ -12,15 +12,6 @@
                 </response>
             </method>
         </resource>
-        <resource path="{lang}/leaders/goalies/{attribute}">
-            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
-            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
-            <method id="get" name="GET">
-                <response>
-                    <representation mediaType="application/json"/>
-                </response>
-            </method>
-        </resource>
         <resource path="{lang}/goalie">
             <resource path="{report}">
                 <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="report" style="template" type="xs:string"/>
@@ -43,6 +34,15 @@
                     </response>
                 </method>
             </resource>
+        </resource>
+        <resource path="{lang}/leaders/goalies/{attribute}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
         </resource>
         <resource path="{lang}/leaders/skaters/{attribute}">
             <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
@@ -89,7 +89,7 @@
                 </response>
             </method>
         </resource>
-        <resource path="{lang}/milestones/skaters">
+        <resource path="{lang}/glossary">
             <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
             <method id="get" name="GET">
                 <response>
@@ -97,7 +97,7 @@
                 </response>
             </method>
         </resource>
-        <resource path="{lang}/glossary">
+        <resource path="{lang}/milestones/skaters">
             <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
             <method id="get" name="GET">
                 <response>

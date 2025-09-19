@@ -8,40 +8,86 @@
 
 ## Introduction
 
-This document provides unofficial documentation **545** data endpoints (HTTP GET methods) across **3** base URL groups:
+This document provides unofficial documentation **595** data endpoints (HTTP GET methods) across **3** base URL groups:
 
 |Base URL                          | Parsed Endpoints|
 |:---------------------------------|----------------:|
-|https://api-web.nhle.com/         |               82|
+|https://api-web.nhle.com/         |              132|
 |https://api.nhle.com/stats/rest/  |               21|
 |https://records.nhl.com/site/api/ |              442|
 
 This documentation lists the **base URL**, **path** (path template when the path contains templated variables, e.g. `{lang}/goalie/{report}`), **path parameters** (when the path is templated), and documented **query parameters** (name, variable type). These metadata were parsed directly from the `application.wadl` of the corresponding base URL. Each endpoint is also given a unique `label`. These labels are *not* a part of the NHL API, and were created through the parsing script so that each endpoint could have a unique and (relatively) simple ID when grouped together across the base URLs.
 
-These include **20** NHL Edge statistics endpoints (or, at least the path would suggest that's the case -- I havent't fully explored these myself just yet). They seem to be all prefixed with `edge_`:
+These include **66** NHL Edge statistics endpoints (or, at least the path would suggest that's the case -- I havent't fully explored these myself just yet). They seem to be all prefixed with `edge_`:
 
-|Label                                  |Path                                                                        |Base URL                  |
-|:--------------------------------------|:---------------------------------------------------------------------------|:-------------------------|
-|edge_goalie_shot_location_detail_now   |v1/edge/goalie-shot-location-detail/{playerId}/now                          |https://api-web.nhle.com/ |
-|edge_goalie_shot_location_detail       |v1/edge/goalie-shot-location-detail/{playerId}/{season}/{gameType}          |https://api-web.nhle.com/ |
-|edge_skater_shot_speed_detail_now      |v1/edge/skater-shot-speed-detail/{playerId}/now                             |https://api-web.nhle.com/ |
-|edge_skater_shot_speed_detail          |v1/edge/skater-shot-speed-detail/{playerId}/{season}/{gameType}             |https://api-web.nhle.com/ |
-|edge_goalie_shot_location_top_10_now   |v1/edge/goalie-shot-location-top-10/{category}/{sortBy}/now                 |https://api-web.nhle.com/ |
-|edge_goalie_shot_location_top_10       |v1/edge/goalie-shot-location-top-10/{category}/{sortBy}/{season}/{gameType} |https://api-web.nhle.com/ |
-|edge_skater_skating_speed_detail_now   |v1/edge/skater-skating-speed-detail/{playerId}/now                          |https://api-web.nhle.com/ |
-|edge_skater_skating_speed_detail       |v1/edge/skater-skating-speed-detail/{playerId}/{season}/{gameType}          |https://api-web.nhle.com/ |
-|edge_skater_detail_now                 |v1/edge/skater-detail/{playerId}/now                                        |https://api-web.nhle.com/ |
-|edge_skater_detail                     |v1/edge/skater-detail/{playerId}/{season}/{gameType}                        |https://api-web.nhle.com/ |
-|edge_skater_shot_speed_top_10          |v1/edge/skater-shot-speed-top-10/{positions}/{sortBy}/{season}/{gameType}   |https://api-web.nhle.com/ |
-|edge_skater_shot_speed_top_10_now      |v1/edge/skater-shot-speed-top-10/{positions}/{sortBy}/now                   |https://api-web.nhle.com/ |
-|edge_skater_speed_top_10               |v1/edge/skater-speed-top-10/{positions}/{sortBy}/{season}/{gameType}        |https://api-web.nhle.com/ |
-|edge_skater_speed_top_10_now           |v1/edge/skater-speed-top-10/{positions}/{sortBy}/now                        |https://api-web.nhle.com/ |
-|edge_goalie_edge_save_pctg_top_10      |v1/edge/goalie-edge-save-pctg-top-10/{sortBy}/{season}/{gameType}           |https://api-web.nhle.com/ |
-|edge_goalie_edge_save_pctg_top_10_now  |v1/edge/goalie-edge-save-pctg-top-10/{sortBy}/now                           |https://api-web.nhle.com/ |
-|edge_goalie_save_percentage_detail_now |v1/edge/goalie-save-percentage-detail/{playerId}/now                        |https://api-web.nhle.com/ |
-|edge_goalie_save_percentage_detail     |v1/edge/goalie-save-percentage-detail/{playerId}/{season}/{gameType}        |https://api-web.nhle.com/ |
-|edge_goalie_detail_now                 |v1/edge/goalie-detail/{playerId}/now                                        |https://api-web.nhle.com/ |
-|edge_goalie_detail                     |v1/edge/goalie-detail/{playerId}/{season}/{gameType}                        |https://api-web.nhle.com/ |
+|Label                                   |Path                                                                                     |Base URL                  |
+|:---------------------------------------|:----------------------------------------------------------------------------------------|:-------------------------|
+|edge_goalie_shot_location_detail        |v1/edge/goalie-shot-location-detail/{playerId}/{season}/{gameType}                       |https://api-web.nhle.com/ |
+|edge_goalie_shot_location_detail_now    |v1/edge/goalie-shot-location-detail/{playerId}/now                                       |https://api-web.nhle.com/ |
+|edge_team_detail                        |v1/edge/team-detail/{teamId}/{season}/{gameType}                                         |https://api-web.nhle.com/ |
+|edge_team_detail_now                    |v1/edge/team-detail/{teamId}/now                                                         |https://api-web.nhle.com/ |
+|edge_team_skating_distance_top_10_now   |v1/edge/team-skating-distance-top-10/{positions}/{strength}/{sortBy}/now                 |https://api-web.nhle.com/ |
+|edge_team_skating_distance_top_10       |v1/edge/team-skating-distance-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType} |https://api-web.nhle.com/ |
+|edge_skater_shot_speed_detail           |v1/edge/skater-shot-speed-detail/{playerId}/{season}/{gameType}                          |https://api-web.nhle.com/ |
+|edge_skater_shot_speed_detail_now       |v1/edge/skater-shot-speed-detail/{playerId}/now                                          |https://api-web.nhle.com/ |
+|edge_goalie_shot_location_top_10_now    |v1/edge/goalie-shot-location-top-10/{category}/{sortBy}/now                              |https://api-web.nhle.com/ |
+|edge_goalie_shot_location_top_10        |v1/edge/goalie-shot-location-top-10/{category}/{sortBy}/{season}/{gameType}              |https://api-web.nhle.com/ |
+|edge_team_zone_time_top_10              |v1/edge/team-zone-time-top-10/{strength}/{sortBy}/{season}/{gameType}                    |https://api-web.nhle.com/ |
+|edge_team_zone_time_top_10_now          |v1/edge/team-zone-time-top-10/{strength}/{sortBy}/now                                    |https://api-web.nhle.com/ |
+|edge_team_skating_distance_detail       |v1/edge/team-skating-distance-detail/{teamId}/{season}/{gameType}                        |https://api-web.nhle.com/ |
+|edge_team_skating_distance_detail_now   |v1/edge/team-skating-distance-detail/{teamId}/now                                        |https://api-web.nhle.com/ |
+|edge_skater_skating_speed_detail        |v1/edge/skater-skating-speed-detail/{playerId}/{season}/{gameType}                       |https://api-web.nhle.com/ |
+|edge_skater_skating_speed_detail_now    |v1/edge/skater-skating-speed-detail/{playerId}/now                                       |https://api-web.nhle.com/ |
+|edge_goalie_5v5_detail                  |v1/edge/goalie-5v5-detail/{playerId}/{season}/{gameType}                                 |https://api-web.nhle.com/ |
+|edge_goalie_5v5_detail_now              |v1/edge/goalie-5v5-detail/{playerId}/now                                                 |https://api-web.nhle.com/ |
+|edge_skater_shot_location_detail        |v1/edge/skater-shot-location-detail/{playerId}/{season}/{gameType}                       |https://api-web.nhle.com/ |
+|edge_skater_shot_location_detail_now    |v1/edge/skater-shot-location-detail/{playerId}/now                                       |https://api-web.nhle.com/ |
+|edge_goalie_landing_now                 |v1/edge/goalie-landing/now                                                               |https://api-web.nhle.com/ |
+|edge_goalie_landing                     |v1/edge/goalie-landing/{season}/{gameType}                                               |https://api-web.nhle.com/ |
+|edge_team_shot_location_top_10          |v1/edge/team-shot-location-top-10/{position}/{category}/{sortBy}/{season}/{gameType}     |https://api-web.nhle.com/ |
+|edge_team_shot_location_top_10_now      |v1/edge/team-shot-location-top-10/{position}/{category}/{sortBy}/now                     |https://api-web.nhle.com/ |
+|edge_goalie_comparison                  |v1/edge/goalie-comparison/{playerId}/{season}/{gameType}                                 |https://api-web.nhle.com/ |
+|edge_goalie_comparison_now              |v1/edge/goalie-comparison/{playerId}/now                                                 |https://api-web.nhle.com/ |
+|edge_skater_distance_top_10_now         |v1/edge/skater-distance-top-10/{positions}/{strength}/{sortBy}/now                       |https://api-web.nhle.com/ |
+|edge_skater_distance_top_10             |v1/edge/skater-distance-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}       |https://api-web.nhle.com/ |
+|edge_skater_speed_top_10                |v1/edge/skater-speed-top-10/{positions}/{sortBy}/{season}/{gameType}                     |https://api-web.nhle.com/ |
+|edge_skater_speed_top_10_now            |v1/edge/skater-speed-top-10/{positions}/{sortBy}/now                                     |https://api-web.nhle.com/ |
+|edge_goalie_edge_save_pctg_top_10_now   |v1/edge/goalie-edge-save-pctg-top-10/{sortBy}/now                                        |https://api-web.nhle.com/ |
+|edge_goalie_edge_save_pctg_top_10       |v1/edge/goalie-edge-save-pctg-top-10/{sortBy}/{season}/{gameType}                        |https://api-web.nhle.com/ |
+|edge_skater_skating_distance_detail     |v1/edge/skater-skating-distance-detail/{playerId}/{season}/{gameType}                    |https://api-web.nhle.com/ |
+|edge_skater_skating_distance_detail_now |v1/edge/skater-skating-distance-detail/{playerId}/now                                    |https://api-web.nhle.com/ |
+|edge_goalie_save_percentage_detail      |v1/edge/goalie-save-percentage-detail/{playerId}/{season}/{gameType}                     |https://api-web.nhle.com/ |
+|edge_goalie_save_percentage_detail_now  |v1/edge/goalie-save-percentage-detail/{playerId}/now                                     |https://api-web.nhle.com/ |
+|edge_skater_comparison                  |v1/edge/skater-comparison/{playerId}/{season}/{gameType}                                 |https://api-web.nhle.com/ |
+|edge_skater_comparison_now              |v1/edge/skater-comparison/{playerId}/now                                                 |https://api-web.nhle.com/ |
+|edge_goalie_5v5_top_10_now              |v1/edge/goalie-5v5-top-10/{sortBy}/now                                                   |https://api-web.nhle.com/ |
+|edge_goalie_5v5_top_10                  |v1/edge/goalie-5v5-top-10/{sortBy}/{season}/{gameType}                                   |https://api-web.nhle.com/ |
+|edge_team_zone_time_details             |v1/edge/team-zone-time-details/{teamId}/{season}/{gameType}                              |https://api-web.nhle.com/ |
+|edge_team_zone_time_details_now         |v1/edge/team-zone-time-details/{teamId}/now                                              |https://api-web.nhle.com/ |
+|edge_goalie_detail                      |v1/edge/goalie-detail/{playerId}/{season}/{gameType}                                     |https://api-web.nhle.com/ |
+|edge_goalie_detail_now                  |v1/edge/goalie-detail/{playerId}/now                                                     |https://api-web.nhle.com/ |
+|edge_team_shot_location_detail          |v1/edge/team-shot-location-detail/{teamId}/{season}/{gameType}                           |https://api-web.nhle.com/ |
+|edge_team_shot_location_detail_now      |v1/edge/team-shot-location-detail/{teamId}/now                                           |https://api-web.nhle.com/ |
+|edge_team_landing                       |v1/edge/team-landing/{season}/{gameType}                                                 |https://api-web.nhle.com/ |
+|edge_team_landing_now                   |v1/edge/team-landing/now                                                                 |https://api-web.nhle.com/ |
+|edge_skater_zone_time                   |v1/edge/skater-zone-time/{playerId}/{season}/{gameType}                                  |https://api-web.nhle.com/ |
+|edge_skater_zone_time_now               |v1/edge/skater-zone-time/{playerId}/now                                                  |https://api-web.nhle.com/ |
+|edge_skater_landing_now                 |v1/edge/skater-landing/now                                                               |https://api-web.nhle.com/ |
+|edge_skater_landing                     |v1/edge/skater-landing/{season}/{gameType}                                               |https://api-web.nhle.com/ |
+|edge_skater_detail                      |v1/edge/skater-detail/{playerId}/{season}/{gameType}                                     |https://api-web.nhle.com/ |
+|edge_skater_detail_now                  |v1/edge/skater-detail/{playerId}/now                                                     |https://api-web.nhle.com/ |
+|edge_team_shot_speed_detail             |v1/edge/team-shot-speed-detail/{teamId}/{season}/{gameType}                              |https://api-web.nhle.com/ |
+|edge_team_shot_speed_detail_now         |v1/edge/team-shot-speed-detail/{teamId}/now                                              |https://api-web.nhle.com/ |
+|edge_team_skating_speed_top_10          |v1/edge/team-skating-speed-top-10/{positions}/{sortBy}/{season}/{gameType}               |https://api-web.nhle.com/ |
+|edge_team_skating_speed_top_10_now      |v1/edge/team-skating-speed-top-10/{positions}/{sortBy}/now                               |https://api-web.nhle.com/ |
+|edge_skater_shot_speed_top_10           |v1/edge/skater-shot-speed-top-10/{positions}/{sortBy}/{season}/{gameType}                |https://api-web.nhle.com/ |
+|edge_skater_shot_speed_top_10_now       |v1/edge/skater-shot-speed-top-10/{positions}/{sortBy}/now                                |https://api-web.nhle.com/ |
+|edge_skater_shot_location_top_10_now    |v1/edge/skater-shot-location-top-10/{position}/{category}/{sortBy}/now                   |https://api-web.nhle.com/ |
+|edge_skater_shot_location_top_10        |v1/edge/skater-shot-location-top-10/{position}/{category}/{sortBy}/{season}/{gameType}   |https://api-web.nhle.com/ |
+|edge_team_skating_speed_detail          |v1/edge/team-skating-speed-detail/{teamId}/{season}/{gameType}                           |https://api-web.nhle.com/ |
+|edge_team_skating_speed_detail_now      |v1/edge/team-skating-speed-detail/{teamId}/now                                           |https://api-web.nhle.com/ |
+|edge_skater_zone_time_top_10_now        |v1/edge/skater-zone-time-top-10/{positions}/{strength}/{sortBy}/now                      |https://api-web.nhle.com/ |
+|edge_skater_zone_time_top_10            |v1/edge/skater-zone-time-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}      |https://api-web.nhle.com/ |
 
 More details on these endpoints (their path parameters, any documented query parameters), as well as the other 500+ parsed endpoints are found immediately below, grouped by base URL.
 
@@ -52,6 +98,74 @@ More details on these endpoints (their path parameters, any documented query par
 3. [`records.nhl.com/site/api`](#recordsnhlcomsiteapi)
 
 ## `api-web.nhle.com`
+
+### cat_edge_goalie_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/cat/edge/goalie-detail/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/cat/edge/goalie-detail/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### cat_edge_goalie_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/cat/edge/goalie-detail/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/cat/edge/goalie-detail/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### cat_edge_skater_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/cat/edge/skater-detail/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/cat/edge/skater-detail/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### cat_edge_skater_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/cat/edge/skater-detail/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/cat/edge/skater-detail/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
 
 ### club_schedule_month
 **Base URL:** `https://api-web.nhle.com/`
@@ -251,15 +365,15 @@ More details on these endpoints (their path parameters, any documented query par
 ### draft_rankings
 **Base URL:** `https://api-web.nhle.com/`
 
-**Path template:** `v1/draft/rankings/{year}/{category}`
+**Path template:** `v1/draft/rankings/{year}/{rankingCategory}`
 
-**URL template:** `https://api-web.nhle.com/v1/draft/rankings/{year}/{category}`
+**URL template:** `https://api-web.nhle.com/v1/draft/rankings/{year}/{rankingCategory}`
 
 **Path parameters:**
-|name     |regex |
-|:--------|:-----|
-|year     |NA    |
-|category |NA    |
+|name            |regex |
+|:---------------|:-----|
+|year            |NA    |
+|rankingCategory |NA    |
 
 **Query parameters (documented):** (none)
 
@@ -286,6 +400,108 @@ More details on these endpoints (their path parameters, any documented query par
 **URL template:** `https://api-web.nhle.com/v1/draft-tracker/picks/now`
 
 **Path parameters:** (none)
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_5v5_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-5v5-detail/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-5v5-detail/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_5v5_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-5v5-detail/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-5v5-detail/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_5v5_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-5v5-top-10/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-5v5-top-10/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|sortBy   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_5v5_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-5v5-top-10/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-5v5-top-10/{sortBy}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|sortBy |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_comparison
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-comparison/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-comparison/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_comparison_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-comparison/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-comparison/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
 
 **Query parameters (documented):** (none)
 
@@ -354,6 +570,36 @@ More details on these endpoints (their path parameters, any documented query par
 |name   |regex |
 |:------|:-----|
 |sortBy |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_landing
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-landing/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-landing/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|season   |NA    |
+|gameType |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_goalie_landing_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/goalie-landing/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/goalie-landing/now`
+
+**Path parameters:** (none)
 
 **Query parameters (documented):** (none)
 
@@ -463,6 +709,40 @@ More details on these endpoints (their path parameters, any documented query par
 
 ---
 
+### edge_skater_comparison
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-comparison/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-comparison/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+|season   |NA    |
+|gameType |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_comparison_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-comparison/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-comparison/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
 ### edge_skater_detail
 **Base URL:** `https://api-web.nhle.com/`
 
@@ -492,6 +772,146 @@ More details on these endpoints (their path parameters, any documented query par
 |name     |regex |
 |:--------|:-----|
 |playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_distance_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-distance-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-distance-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name      |regex      |
+|:---------|:----------|
+|positions |NA         |
+|strength  |NA         |
+|sortBy    |NA         |
+|season    |[0-9]{8}   |
+|gameType  |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_distance_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-distance-top-10/{positions}/{strength}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-distance-top-10/{positions}/{strength}/{sortBy}/now`
+
+**Path parameters:**
+|name      |regex |
+|:---------|:-----|
+|positions |NA    |
+|strength  |NA    |
+|sortBy    |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_landing
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-landing/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-landing/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|season   |NA    |
+|gameType |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_landing_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-landing/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-landing/now`
+
+**Path parameters:** (none)
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_shot_location_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-shot-location-detail/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-shot-location-detail/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_shot_location_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-shot-location-detail/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-shot-location-detail/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_shot_location_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-shot-location-top-10/{position}/{category}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-shot-location-top-10/{position}/{category}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|position |NA         |
+|category |NA         |
+|sortBy   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_shot_location_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-shot-location-top-10/{position}/{category}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-shot-location-top-10/{position}/{category}/{sortBy}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|position |NA    |
+|category |NA    |
+|sortBy   |NA    |
 
 **Query parameters (documented):** (none)
 
@@ -567,6 +987,40 @@ More details on these endpoints (their path parameters, any documented query par
 
 ---
 
+### edge_skater_skating_distance_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-skating-distance-detail/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-skating-distance-detail/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_skating_distance_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-skating-distance-detail/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-skating-distance-detail/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
 ### edge_skater_skating_speed_detail
 **Base URL:** `https://api-web.nhle.com/`
 
@@ -632,6 +1086,460 @@ More details on these endpoints (their path parameters, any documented query par
 |:---------|:-----|
 |positions |NA    |
 |sortBy    |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_zone_time
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-zone-time/{playerId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-zone-time/{playerId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|playerId |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_zone_time_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-zone-time/{playerId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-zone-time/{playerId}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_zone_time_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-zone-time-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-zone-time-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name      |regex      |
+|:---------|:----------|
+|positions |NA         |
+|strength  |NA         |
+|sortBy    |NA         |
+|season    |[0-9]{8}   |
+|gameType  |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_skater_zone_time_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/skater-zone-time-top-10/{positions}/{strength}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/skater-zone-time-top-10/{positions}/{strength}/{sortBy}/now`
+
+**Path parameters:**
+|name      |regex |
+|:---------|:-----|
+|positions |NA    |
+|strength  |NA    |
+|sortBy    |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-detail/{teamId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-detail/{teamId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|teamId   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-detail/{teamId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-detail/{teamId}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|teamId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_landing
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-landing/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-landing/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_landing_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-landing/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-landing/now`
+
+**Path parameters:** (none)
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_shot_location_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-shot-location-detail/{teamId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-shot-location-detail/{teamId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|teamId   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_shot_location_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-shot-location-detail/{teamId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-shot-location-detail/{teamId}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|teamId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_shot_location_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-shot-location-top-10/{position}/{category}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-shot-location-top-10/{position}/{category}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|position |NA         |
+|category |NA         |
+|sortBy   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_shot_location_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-shot-location-top-10/{position}/{category}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-shot-location-top-10/{position}/{category}/{sortBy}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|position |NA    |
+|category |NA    |
+|sortBy   |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_shot_speed_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-shot-speed-detail/{teamId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-shot-speed-detail/{teamId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|teamId   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_shot_speed_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-shot-speed-detail/{teamId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-shot-speed-detail/{teamId}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|teamId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_distance_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-distance-detail/{teamId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-distance-detail/{teamId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|teamId   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_distance_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-distance-detail/{teamId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-distance-detail/{teamId}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|teamId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_distance_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-distance-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-distance-top-10/{positions}/{strength}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name      |regex      |
+|:---------|:----------|
+|positions |NA         |
+|strength  |NA         |
+|sortBy    |NA         |
+|season    |[0-9]{8}   |
+|gameType  |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_distance_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-distance-top-10/{positions}/{strength}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-distance-top-10/{positions}/{strength}/{sortBy}/now`
+
+**Path parameters:**
+|name      |regex |
+|:---------|:-----|
+|positions |NA    |
+|strength  |NA    |
+|sortBy    |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_speed_detail
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-speed-detail/{teamId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-speed-detail/{teamId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|teamId   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_speed_detail_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-speed-detail/{teamId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-speed-detail/{teamId}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|teamId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_speed_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-speed-top-10/{positions}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-speed-top-10/{positions}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name      |regex      |
+|:---------|:----------|
+|positions |NA         |
+|sortBy    |NA         |
+|season    |[0-9]{8}   |
+|gameType  |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_skating_speed_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-skating-speed-top-10/{positions}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-skating-speed-top-10/{positions}/{sortBy}/now`
+
+**Path parameters:**
+|name      |regex |
+|:---------|:-----|
+|positions |NA    |
+|sortBy    |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_zone_time_details
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-zone-time-details/{teamId}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-zone-time-details/{teamId}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|teamId   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_zone_time_details_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-zone-time-details/{teamId}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-zone-time-details/{teamId}/now`
+
+**Path parameters:**
+|name   |regex |
+|:------|:-----|
+|teamId |NA    |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_zone_time_top_10
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-zone-time-top-10/{strength}/{sortBy}/{season}/{gameType}`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-zone-time-top-10/{strength}/{sortBy}/{season}/{gameType}`
+
+**Path parameters:**
+|name     |regex      |
+|:--------|:----------|
+|strength |NA         |
+|sortBy   |NA         |
+|season   |[0-9]{8}   |
+|gameType |[0-9]{1,2} |
+
+**Query parameters (documented):** (none)
+
+---
+
+### edge_team_zone_time_top_10_now
+**Base URL:** `https://api-web.nhle.com/`
+
+**Path template:** `v1/edge/team-zone-time-top-10/{strength}/{sortBy}/now`
+
+**URL template:** `https://api-web.nhle.com/v1/edge/team-zone-time-top-10/{strength}/{sortBy}/now`
+
+**Path parameters:**
+|name     |regex |
+|:--------|:-----|
+|strength |NA    |
+|sortBy   |NA    |
 
 **Query parameters (documented):** (none)
 
@@ -789,15 +1697,15 @@ More details on these endpoints (their path parameters, any documented query par
 ### meta_playoff_series
 **Base URL:** `https://api-web.nhle.com/`
 
-**Path template:** `v1/meta/playoff-series/{year}/{series_letter}`
+**Path template:** `v1/meta/playoff-series/{year}/{seriesLetter}`
 
-**URL template:** `https://api-web.nhle.com/v1/meta/playoff-series/{year}/{series_letter}`
+**URL template:** `https://api-web.nhle.com/v1/meta/playoff-series/{year}/{seriesLetter}`
 
 **Path parameters:**
-|name          |regex |
-|:-------------|:-----|
-|year          |NA    |
-|series_letter |NA    |
+|name         |regex |
+|:------------|:-----|
+|year         |NA    |
+|seriesLetter |NA    |
 
 **Query parameters (documented):** (none)
 
@@ -864,14 +1772,14 @@ More details on these endpoints (their path parameters, any documented query par
 ### player_game_log
 **Base URL:** `https://api-web.nhle.com/`
 
-**Path template:** `v1/player/{player}/game-log/{season}/{gameType}`
+**Path template:** `v1/player/{playerId}/game-log/{season}/{gameType}`
 
-**URL template:** `https://api-web.nhle.com/v1/player/{player}/game-log/{season}/{gameType}`
+**URL template:** `https://api-web.nhle.com/v1/player/{playerId}/game-log/{season}/{gameType}`
 
 **Path parameters:**
 |name     |regex      |
 |:--------|:----------|
-|player   |NA         |
+|playerId |NA         |
 |season   |[0-9]{8}   |
 |gameType |[0-9]{1,2} |
 
@@ -882,14 +1790,14 @@ More details on these endpoints (their path parameters, any documented query par
 ### player_game_log_now
 **Base URL:** `https://api-web.nhle.com/`
 
-**Path template:** `v1/player/{player}/game-log/now`
+**Path template:** `v1/player/{playerId}/game-log/now`
 
-**URL template:** `https://api-web.nhle.com/v1/player/{player}/game-log/now`
+**URL template:** `https://api-web.nhle.com/v1/player/{playerId}/game-log/now`
 
 **Path parameters:**
-|name   |regex |
-|:------|:-----|
-|player |NA    |
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
 
 **Query parameters (documented):** (none)
 
@@ -898,14 +1806,14 @@ More details on these endpoints (their path parameters, any documented query par
 ### player_landing
 **Base URL:** `https://api-web.nhle.com/`
 
-**Path template:** `v1/player/{player}/landing`
+**Path template:** `v1/player/{playerId}/landing`
 
-**URL template:** `https://api-web.nhle.com/v1/player/{player}/landing`
+**URL template:** `https://api-web.nhle.com/v1/player/{playerId}/landing`
 
 **Path parameters:**
-|name   |regex |
-|:------|:-----|
-|player |NA    |
+|name     |regex |
+|:--------|:-----|
+|playerId |NA    |
 
 **Query parameters (documented):** (none)
 

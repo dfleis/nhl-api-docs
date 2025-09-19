@@ -12,6 +12,15 @@
                 </response>
             </method>
         </resource>
+        <resource path="{lang}/leaders/goalies/{attribute}">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
+                <response>
+                    <representation mediaType="application/json"/>
+                </response>
+            </method>
+        </resource>
         <resource path="{lang}/goalie">
             <resource path="{report}">
                 <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="report" style="template" type="xs:string"/>
@@ -34,15 +43,6 @@
                     </response>
                 </method>
             </resource>
-        </resource>
-        <resource path="{lang}/leaders/goalies/{attribute}">
-            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
-            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
-            <method id="get" name="GET">
-                <response>
-                    <representation mediaType="application/json"/>
-                </response>
-            </method>
         </resource>
         <resource path="{lang}/leaders/skaters/{attribute}">
             <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="attribute" style="template" type="xs:string"/>
@@ -67,16 +67,16 @@
                 </response>
             </method>
         </resource>
-        <resource path="{lang}/country">
-            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
-            <method id="get" name="GET">
+        <resource path="/ping">
+            <method id="ping" name="GET">
                 <response>
                     <representation mediaType="application/json"/>
                 </response>
             </method>
         </resource>
-        <resource path="/ping">
-            <method id="ping" name="GET">
+        <resource path="{lang}/country">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+            <method id="get" name="GET">
                 <response>
                     <representation mediaType="application/json"/>
                 </response>
@@ -166,15 +166,15 @@
                 </method>
             </resource>
         </resource>
-        <resource path="{lang}/draft">
+        <resource path="{lang}/milestones/goalies">
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
             <method id="get" name="GET">
                 <response>
                     <representation mediaType="application/json"/>
                 </response>
             </method>
         </resource>
-        <resource path="{lang}/milestones/goalies">
-            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="lang" style="template" type="xs:string"/>
+        <resource path="{lang}/draft">
             <method id="get" name="GET">
                 <response>
                     <representation mediaType="application/json"/>
